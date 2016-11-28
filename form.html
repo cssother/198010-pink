@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Пинк</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="header">
+    <div class="logo">
+      <a href="index.html" class="logo__link">
+        <img class="logo__icon logo__icon--visibility" src="http://placehold.it/30x30">
+        <span class="logo__text">Pink</span>
+      </a>
+    </div>
+    <div class="menu">
+      <button type="button" class="button"></button>
+      <ul class="menu__list">
+        <li class="menu__item"><a href="#" class="menu__link">Гланая</a></li>
+        <li class="menu__item"><a href="#" class="menu__link">Фотографии</a></li>
+        <li class="menu__item"><a href="#" class="menu__link">Конкурс</a></li>
+        <li class="menu__item"><a href="#" class="menu__link">HTML Academy</a></li>
+      </ul>
+    </div>
+  </header>
+  <main>
+    <div class="header-content">
+      <img class="header-content__bg" src="http://placehold.it/300x300">
+      <div class="header-content__text">
+        <span>Конкурс на самое безбашенное путешествие с Пинк</span>
+      </div>
+    </div>
+    <div class="competition">
+      <p class="competition__text">Поделитесь своей историей и получите шанс выиграть ценный приз - 1000 миль на вашу бонусную карту!</p>
+    </div>
+    <form action="post" class="form">
+      <div class="form__user-data">
+        <fieldset>
+          <legend class="form__heading-section form__heading-section--visibility">Ф.И.О.</legend>
+          <label for="last-name" class="form__item-name">Фамилия:</label>
+          <input id="last-name" class="form__item-value" type="text" name="last-name" placeholder="Укажите фамилию*" required>
+
+          <label for="first-name" class="form__item-name">Имя:</label>
+          <input id="first-name" class="form__item-value" type="text" name="first-name" placeholder="Введите ваше имя*" required>
+
+          <label for="middle-name" class="form__item-name">Отчество:</label>
+          <input id="middle-name" class="form__item-value" type="text" name="middle-name" placeholder="Ну и отчество тоже">
+        </fieldset>
+      </div>
+      <div class="form__user-progress">
+        <fieldset>
+          <legend class="form__heading-section">Ваши безбашенные достижения в путешествии</legend>
+          <label for="selfie" class="form__item-name">Сделал селфи с акулой</label>
+          <input id="selfie" class="form__item-value" type="checkbox" name="selfie" checked>
+
+          <label for="beach" class="form__item-name">Обгорел на пляже</label>
+          <input id="beach" class="form__item-value" type="checkbox" name="beach" checked>
+
+          <label for="chuck-norris" class="form__item-name">Видел Чака Норриса</label>
+          <input id="chuck-norris" class="form__item-value" type="checkbox" name="chuck-norris">
+
+          <label for="souvenir" class="form__item-name">Накупил сувениров</label>
+          <input id="souvenir" class="form__item-value" type="checkbox" name="souvenir">
+
+          <label for="tower" class="form__item-name">Удержал башню</label>
+          <input id="tower" class="form__item-value" type="checkbox" name="tower" checked>
+
+          <label for="hotel" class="form__item-name">Разгромил отель</label>
+          <input id="hotel" class="form__item-value" type="checkbox" name="hotel">
+        </fieldset>
+        <div class="form__user-contacts">
+          <fieldset>
+            <legend class="form__heading-section form__heading-section--visibility">Контактные данные</legend>
+            <label for="tel" class="form__item-name">Номер телефона</label>
+            <input id="tel" class="form__item-value" type="tel" name="tel" placeholder="Номер, пожалуйста">
+
+            <label for="email" class="form__item-name">Адресок почты</label>
+            <input id="email" class="form__item-value" type="email" name="email" placeholder="Введите почту*">
+          </fieldset>
+        </div>
+        <div class="form__user-app">
+          <fieldset>
+            <legend class="form__heading-section">С каким приложением путешествовали?</legend>
+            <label for="ios" class="form__item-name">Pink для iOS</label>
+            <input id="ios" type="radio" class="form__item-value" name="app" value="ios" checked>
+
+            <label for="android" class="form__item-name">Pink на Android</label>
+            <input id="android" type="radio" class="form__item-value" name="app" value="android">
+
+            <label for="windows" class="form__item-name">Windows Phone</label>
+            <input id="windows" type="radio" class="form__item-value" name="app" value="windows">
+          </fieldset>
+          <fieldset>
+            <legend class="form__heading-section">Опишите свои эмоции</legend>
+            <textarea name="emotions" cols="30" rows="10" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+          </fieldset>
+        </div>
+      </div>
+      <button type="submit" class="form__button">Отправить форму</button>
+      <span class="form__mark">*-обязательные поля</span>
+    </form>
+  </main>
+  <footer class="footer">
+    <div class="footer__logo">
+      <div class="logo">
+        <a href="index.html" class="logo__link">
+          <img class="logo__icon logo__icon--visibility" src="http://placehold.it/30x30">
+          <span class="logo__text">Pink</span>
+        </a>
+      </div>
+    </div>
+    <div class="footer__social">
+      <div class="social">
+        <ul class="social__list">
+          <li cass="social__item"><a class="social__link" href="#">twitter</a></li>
+          <li cass="social__item"><a class="social__link" href="#">facebook</a></li>
+          <li cass="social__item"><a class="social__link" href="#">youtube</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__copyright">
+      <div class="copyright">
+        <span class="copyright__text">Разработано</span>
+        <a href="#" class="copyright__link">
+          <img class="copyright__icon" src="http://placehold.it/20x25" alt="">
+        </a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
