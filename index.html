@@ -6,14 +6,15 @@
 </head>
 <body class="body">
   <header class="header">
-    <div class="logo">
-      <a href="" class="logo__link">
-        <img class="logo__icon logo__icon--visibility" src="http://placehold.it/30x30">
-        <span class="logo__text">Pink</span>
-      </a>
+    <div class="header-top">
+      <div class="main-logo">
+        <a href="" class="main-logo__link">
+          <img class="main-logo__icon" src="http://placehold.it/30x30">
+        </a>
+      </div>
+      <button type="button" class="header-top__button"></button>
     </div>
     <nav class="main-nav">
-      <button type="button" class="main-nav__button"></button>
       <ul class="main-nav__list">
         <li class="main-nav__item"><a href="#" class="main-nav__link">Гланая</a></li>
         <li class="main-nav__item"><a href="#" class="main-nav__link">Фотографии</a></li>
@@ -21,70 +22,114 @@
         <li class="main-nav__item"><a href="#" class="main-nav__link">HTML Academy</a></li>
       </ul>
     </nav>
+    <div class="header-intro">
+      <img class="header-intro__img" src="http://placehold.it/150x200">
+    </div>
   </header>
   <main class="main">
-    <div class="header-content">
-      <img class="header-content__bg" src="http://placehold.it/300x300">
-      <img class="header-content__img" src="http://placehold.it/150x200">
-    </div>
-    <div class="download-app">
-      <a href="#" class="download-app__link">Скачать приложение</a>
-      <div class="download-app__icon">IOS</div>
-      <div class="download-app__icon">Android</div>
-      <div class="download-app__icon">Windows</div>
-      <p class="download-app__info">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
-    </div>
-    <div class="information">
-      <div class="information__top">
-        <span>Устали от серости мегаполиса?</span>
-        <span>Нам есть, что вам предложить!</span>
+    <div class="download-block">
+      <div class="download-app">
+        <a href="#" class="download-app__link">Скачать приложение</a>
       </div>
-      <div class="information__contents">
-        <h2 class="information__title">Поднимает настроение</h2>
-        <p class="information__text">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
-        <h2 class="information__title">Меняет мир вокруг</h2>
-        <p class="information__text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
-        <h2 class="information__title">Заводит новых друзей</h2>
-        <p class="information__text">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
+      <div class="download-block__icon">IOS</div>
+      <div class="download-block__icon">Android</div>
+      <div class="download-block__icon">Windows</div>
+      <p class="download-block__info">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+    </div>
+    <article class="dignity">
+      <section class="dignity__heading">
+        <p>Устали от серости мегаполиса?</p>
+        <p>Нам есть, что вам предложить!</p>
+      </section>
+      <div class="dignity__contents">
+        <section class="dignity__section">
+          <h2 class="dignity__title">Поднимает настроение</h2>
+          <p class="dignity__text">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+        </section>
+        <section class="dignity__section">
+          <h2 class="dignity__title">Меняет мир вокруг</h2>
+          <p class="dignity__text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+        </section>
+        <section class="dignity__section">
+          <h2 class="dignity__title">Заводит новых друзей</h2>
+          <p class="dignity__text">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
+        </section>
         <img src="http://placehold.it/150x300" alt="" class="description__img">
       </div>
+    </article>
+    <div class="comment">
+      <span class="comment__user-name">Николай Петров</span>
+      <p class="comment__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
     </div>
-    <div class="reviews">
-      <span class="reviews__name">Николай Петров</span>
-      <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
-    </div>
-    <div class="price">
-      <div class="price__name">
-        <span>стандарт</span>
-        <span>3,99 USD</span>
-      </div>
-      <div class="price__set">
-        <span class="price__item">розовый фильтр</span>
-        <span class="price__item">смайлики</span>
-        <span class="price__item">комментарии</span>
-      </div>
-      <div class="price__hit">хит</div>
-    </div>
-    <article class="contacts">
-      <section class="contacts__section">
-        <span class="contacts__intro">Остались вопросы? Свяжитесь с нами!</span>
+    <article class="price">
+      <input class="toggle-btn" type="radio" id="price__btn-1" name="toggle">
+      <input class="toggle-btn" type="radio" id="price__btn-2" name="toggle" checked>
+      <input class="toggle-btn" type="radio" id="price__btn-3" name="toggle">
+      <section class="price__section" id="price__slide-1">
+        <div class="price__name">
+          <span class="price__plan-name"></span>
+          <span calss="price__plan-cost"></span>
+        </div>
+        <div class="price__set">
+          <span class="price__item">розовый фильтр</span>
+          <span class="price__item">смайлики</span>
+          <span class="price__item">комментарии</span>
+        </div>
+        <div class="price__hit">хит</div>
       </section>
-      <section class="contacts__section">
-        <span class="contacts__title">Звоните:</span>
-        <span class="contacts__content">+7(812)555-66-66</span>
+      <section class="price__section" id="price__slide-2">
+        <div class="price__name">
+          <span class="price__plan-name">стандарт</span>
+          <span calss="price__plan-cost">3,99 USD</span>
+        </div>
+        <div class="price__set">
+          <span class="price__item">розовый фильтр</span>
+          <span class="price__item">смайлики</span>
+          <span class="price__item">комментарии</span>
+        </div>
+        <div class="price__hit">хит</div>
       </section>
-      <section class="contacts__section">
-        <span class="contacts__title">Пишите:</span>
-        <span class="contacts__content">mail@htmlacademy.ru</span>
-      </section>
-      <section class="contacts__section">
-        <span class="contacts__title">Приезжайте в гости:</span>
-        <span class="contacts__content">ул. Большая Конюшенная, 19/8</span>
-      </section>
-      <section class="contacts__section">
-        <div class="contacts__map"><img src="http://placehold.it/300x300"></div>
+      <section class="price__section" id="price__slide-3">
+        <div class="price__name">
+          <span class="price__plan-name"></span>
+          <span calss="price__plan-cost"></span>
+        </div>
+        <div class="price__set">
+          <span class="price__item">розовый фильтр</span>
+          <span class="price__item">смайлики</span>
+          <span class="price__item">комментарии</span>
+        </div>
+        <div class="price__hit">хит</div>
       </section>
     </article>
   </main>
+  <footer calss="footer">
+    <article class="contacts">
+      <section class="contacts__section">
+        <span class="contacts__heading">Остались вопросы? Свяжитесь с нами!</span>
+      </section>
+      <section class="contacts__data">
+        <span class="contacts__title">Звоните:</span>
+        <address class="contacts__info">
+          <a class="contacts__link" href="tel: +7(812)555-66-66">+7(812)555-66-66</a>
+        </address>
+      </section>
+      <section class="contacts__data">
+        <span class="contacts__title">Пишите:</span>
+        <address class="contacts__info">
+          <a class="contacts__link" href="mailto: mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+        </address>
+      </section>
+      <section class="contacts__data">
+        <span class="contacts__title">Приезжайте в гости:</span>
+        <address class="contacts__info">
+          <a class="contacts__link" href="#">ул. Большая Конюшенная, 19/8</a>
+        </address>
+      </section>
+    </article>
+    <div class="map">
+      <img class="map__img" src="http://placehold.it/300x300">
+    </div>
+  </footer>
 </body>
 </html>
