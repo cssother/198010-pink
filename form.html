@@ -6,14 +6,15 @@
 </head>
 <body class="body">
   <header class="header">
-    <div class="logo">
-      <a href="index.html" class="logo__link">
-        <img class="logo__icon logo__icon--visibility" src="http://placehold.it/30x30">
-        <span class="logo__text">Pink</span>
-      </a>
+    <div class="header-top">
+      <div class="main-logo">
+        <a href="" class="main-logo__link">
+          <img class="main-logo__icon" src="http://placehold.it/30x30">
+        </a>
+      </div>
+      <button type="button" class="header-top__button"></button>
     </div>
     <nav class="main-nav">
-      <button type="button" class="main-nav__button"></button>
       <ul class="main-nav__list">
         <li class="main-nav__item"><a href="#" class="main-nav__link">Гланая</a></li>
         <li class="main-nav__item"><a href="#" class="main-nav__link">Фотографии</a></li>
@@ -21,94 +22,108 @@
         <li class="main-nav__item"><a href="#" class="main-nav__link">HTML Academy</a></li>
       </ul>
     </nav>
+    <div class="header-intro">
+      <div class="header-intro__text">Конкурс на самое безбашенное путешествие с Пинк</div>
+    </div>
   </header>
   <main class="main">
-    <div class="header-content">
-      <img class="header-content__bg" src="http://placehold.it/300x300">
-      <div class="header-content__text">
-        <span>Конкурс на самое безбашенное путешествие с Пинк</span>
-      </div>
-    </div>
     <div class="topic-name">
       <p class="topic-name__text">Поделитесь своей историей и получите шанс выиграть ценный приз - 1000 миль на вашу бонусную карту!</p>
     </div>
-    <form action="post" class="form">
+    <form action="#" method="post" class="form">
       <div class="form__user-data">
-        <fieldset>
-          <legend class="form__heading-section form__heading-section--visibility">Ф.И.О.</legend>
-          <label for="last-name" class="form__item-name">Фамилия:</label>
-          <input id="last-name" class="form__item-value" type="text" name="last-name" placeholder="Укажите фамилию*" required>
+        <div class="form__heading-section form__heading-section--visibility">Ф.И.О.</div>
+        <label class="field-text">
+          <span class="field-text__name">Фамилия:</span>
+          <input class="field-text__input" type="text" name="last-name" placeholder="Укажите фамилию*" required>
+        </label>
 
-          <label for="first-name" class="form__item-name">Имя:</label>
-          <input id="first-name" class="form__item-value" type="text" name="first-name" placeholder="Введите ваше имя*" required>
+        <label class="field-text">
+          <span class="field-text__name">Имя:</span>
+          <input class="field-text__input" type="text" name="first-name" placeholder="Введите ваше имя*" required>
+        </label>
 
-          <label for="middle-name" class="form__item-name">Отчество:</label>
-          <input id="middle-name" class="form__item-value" type="text" name="middle-name" placeholder="Ну и отчество тоже">
-        </fieldset>
+        <label class="field-text">
+          <span class="field-text__name">Отчество:</span>
+          <input class="field-text__input" type="text" name="middle-name" placeholder="Ну и отчество тоже">
+        </label>
       </div>
+
       <div class="form__user-progress">
-        <fieldset>
-          <legend class="form__heading-section">Ваши безбашенные достижения в путешествии</legend>
-          <label for="selfie" class="form__item-name">Сделал селфи с акулой</label>
-          <input id="selfie" class="form__item-value" type="checkbox" name="selfie" checked>
+        <div class="form__heading-section">Ваши безбашенные достижения в путешествии</div>
+        <label class="field-checkbox">
+          <span class="field-checkbox__name">Сделал селфи с акулой</span>
+          <input class="field-checkbox__input" type="checkbox" name="selfie" checked>
+        </label>
 
-          <label for="beach" class="form__item-name">Обгорел на пляже</label>
-          <input id="beach" class="form__item-value" type="checkbox" name="beach" checked>
+        <label class="field-checkbox">
+          <span class="field-checkbox">Обгорел на пляже</span>
+          <input class="field-checkbox__input" type="checkbox" name="beach" checked>
+        </label>
 
-          <label for="chuck-norris" class="form__item-name">Видел Чака Норриса</label>
-          <input id="chuck-norris" class="form__item-value" type="checkbox" name="chuck-norris">
+        <label class="field-checkbox">
+          <span class="field-checkbox__name">Видел Чака Норриса</span>
+          <input class="field-checkbox__input" type="checkbox" name="chuck-norris">
+        </label>
 
-          <label for="souvenir" class="form__item-name">Накупил сувениров</label>
-          <input id="souvenir" class="form__item-value" type="checkbox" name="souvenir">
+        <label class="field-checkbox">
+          <span class="field-checkbox__name">Накупил сувениров</span>
+          <input class="field-checkbox__input" type="checkbox" name="souvenir">
+        </label>
 
-          <label for="tower" class="form__item-name">Удержал башню</label>
-          <input id="tower" class="form__item-value" type="checkbox" name="tower" checked>
+        <label class="field-checkbox">
+          <span class="field-checkbox__name">Удержал башню</span>
+          <input class="field-checkbox__input" type="checkbox" name="tower" checked>
+        </label>
 
-          <label for="hotel" class="form__item-name">Разгромил отель</label>
-          <input id="hotel" class="form__item-value" type="checkbox" name="hotel">
-        </fieldset>
-        <div class="form__user-contacts">
-          <fieldset>
-            <legend class="form__heading-section form__heading-section--visibility">Контактные данные</legend>
-            <label for="tel" class="form__item-name">Номер телефона</label>
-            <input id="tel" class="form__item-value" type="tel" name="tel" placeholder="Номер, пожалуйста">
-
-            <label for="email" class="form__item-name">Адресок почты</label>
-            <input id="email" class="form__item-value" type="email" name="email" placeholder="Введите почту*">
-          </fieldset>
-        </div>
-        <div class="form__user-app">
-          <fieldset>
-            <legend class="form__heading-section">С каким приложением путешествовали?</legend>
-            <label for="ios" class="form__item-name">Pink для iOS</label>
-            <input id="ios" type="radio" class="form__item-value" name="app" value="ios" checked>
-
-            <label for="android" class="form__item-name">Pink на Android</label>
-            <input id="android" type="radio" class="form__item-value" name="app" value="android">
-
-            <label for="windows" class="form__item-name">Windows Phone</label>
-            <input id="windows" type="radio" class="form__item-value" name="app" value="windows">
-          </fieldset>
-          <fieldset>
-            <legend class="form__heading-section">Опишите свои эмоции</legend>
-            <textarea name="emotions" cols="30" rows="10" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
-          </fieldset>
-        </div>
+        <label class="field-checkbox">
+          <span class="field-checkbox__name">Разгромил отель</span>
+          <input class="field-checkbox__input" type="checkbox" name="hotel">
+        </label>
       </div>
-      <button type="submit" class="form__button">Отправить форму</button>
+      <div class="form__user-contacts">
+        <div class="form__heading-section form__heading-section--visibility">Контактные данные</div>
+        <label class="field-tel">
+          <span class="field-tel__name">Номер телефона</span>
+          <input class="field-tel__input" type="tel" name="tel" placeholder="Номер, пожалуйста">
+        </label>
+
+        <label class="field-email">
+          <span class="field-email__name">Адресок почты</span>
+          <input class="field-email__input" type="email" name="email" placeholder="Введите почту*">
+        </label>
+      </div>
+      <div class="form__user-app">
+        <div class="form__heading-section">С каким приложением путешествовали?</div>
+        <label class="field-radio">
+          <span class="field-radio__name">Pink для iOS</span>
+          <input class="field-radio__input" type="radio" name="app" value="ios" checked>
+        </label>
+
+        <label class="field-radio">
+          <span class="field-radio__name">Pink на Android</span>
+          <input class="fiels-radio__input" type="radio" name="app" value="android">
+        </label>
+
+        <label class="field-radio">
+          <span class="field-radio__name">Windows Phone</span>
+          <input type="radio" class="fiels-radio__input" name="app" value="windows">
+        </label>
+      </div>
+      <div class="form__heading-section">Опишите свои эмоции</div>
+      <textarea name="emotions" cols="30" rows="10" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+      <button type="submit" class="form-button">Отправить форму</button>
       <span class="form__mark">*-обязательные поля</span>
     </form>
   </main>
   <footer class="footer">
     <div class="footer__logo">
-      <div class="logo">
-        <a href="index.html" class="logo__link">
-          <img class="logo__icon logo__icon--visibility" src="http://placehold.it/30x30">
-          <span class="logo__text">Pink</span>
+      <div class="logo-full">
+        <a href="index.html" class="logo-full__link">
+          <img class="logo-full__icon" src="http://placehold.it/30x30">
         </a>
       </div>
     </div>
-    <div class="footer__social">
       <div class="social">
         <ul class="social__list">
           <li cass="social__item"><a class="social__link" href="#">twitter</a></li>
@@ -116,15 +131,12 @@
           <li cass="social__item"><a class="social__link" href="#">youtube</a></li>
         </ul>
       </div>
-    </div>
-    <div class="footer__copyright">
       <div class="copyright">
         <span class="copyright__text">Разработано</span>
         <a href="#" class="copyright__link">
           <img class="copyright__icon" src="http://placehold.it/20x25" alt="">
         </a>
       </div>
-    </div>
   </footer>
 </body>
 </html>
