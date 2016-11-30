@@ -31,102 +31,90 @@
       <div class="download-app">
         <a href="#" class="download-app__link">Скачать приложение</a>
       </div>
-      <div class="download-block__icon">IOS</div>
-      <div class="download-block__icon">Android</div>
-      <div class="download-block__icon">Windows</div>
+      <div class="download-block__icon-wrap">
+        <div class="download-block__icon">IOS</div>
+        <div class="download-block__icon">Android</div>
+        <div class="download-block__icon">Windows</div>
+      </div>
       <p class="download-block__info">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
     </div>
-    <article class="dignity">
-      <section class="dignity__heading">
+    <div class="feature">
+      <div class="feature__heading">
         <p>Устали от серости мегаполиса?</p>
         <p>Нам есть, что вам предложить!</p>
-      </section>
-      <div class="dignity__contents">
-        <section class="dignity__section">
-          <h2 class="dignity__title">Поднимает настроение</h2>
-          <p class="dignity__text">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
-        </section>
-        <section class="dignity__section">
-          <h2 class="dignity__title">Меняет мир вокруг</h2>
-          <p class="dignity__text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
-        </section>
-        <section class="dignity__section">
-          <h2 class="dignity__title">Заводит новых друзей</h2>
-          <p class="dignity__text">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
-        </section>
+      </div>
+      <div class="feature__contents">
+        <div class="feature__section">
+          <h2 class="feature__title">Поднимает настроение</h2>
+          <p class="feature__text">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+        </div>
+        <div class="feature__section">
+          <h2 class="feature__title">Меняет мир вокруг</h2>
+          <p class="feature__text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+        </div>
+        <div class="feature__section">
+          <h2 class="feature__title">Заводит новых друзей</h2>
+          <p class="feature__text">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
+        </div>
         <img src="http://placehold.it/150x300" alt="" class="description__img">
       </div>
-    </article>
-    <div class="comment">
-      <span class="comment__user-name">Николай Петров</span>
-      <p class="comment__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
     </div>
-    <article class="price">
+    <blockquote class="comment">
+      <cite class="comment__user-name">Николай Петров</cite>
+      <p class="comment__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+    </blockquote>
+    <div class="price">
       <input class="toggle-btn" type="radio" id="price__btn-1" name="toggle">
       <input class="toggle-btn" type="radio" id="price__btn-2" name="toggle" checked>
       <input class="toggle-btn" type="radio" id="price__btn-3" name="toggle">
-      <section class="price__section" id="price__slide-1">
-        <div class="price__name">
-          <span class="price__plan-name"></span>
-          <span calss="price__plan-cost"></span>
-        </div>
-        <div class="price__set">
-          <span class="price__item">розовый фильтр</span>
-          <span class="price__item">смайлики</span>
-          <span class="price__item">комментарии</span>
-        </div>
-        <div class="price__hit">хит</div>
-      </section>
-      <section class="price__section" id="price__slide-2">
-        <div class="price__name">
-          <span class="price__plan-name">стандарт</span>
-          <span calss="price__plan-cost">3,99 USD</span>
-        </div>
-        <div class="price__set">
-          <span class="price__item">розовый фильтр</span>
-          <span class="price__item">смайлики</span>
-          <span class="price__item">комментарии</span>
-        </div>
-        <div class="price__hit">хит</div>
-      </section>
-      <section class="price__section" id="price__slide-3">
-        <div class="price__name">
-          <span class="price__plan-name"></span>
-          <span calss="price__plan-cost"></span>
-        </div>
-        <div class="price__set">
-          <span class="price__item">розовый фильтр</span>
-          <span class="price__item">смайлики</span>
-          <span class="price__item">комментарии</span>
-        </div>
-        <div class="price__hit">хит</div>
-      </section>
-    </article>
+      <table calss="table">
+        <tr class="table__header">
+          <td class="table__header-field"><span class="table__header-name">мини</span><br/><span class="table__header-cost">2,99 USD</span></td>
+          <td class="table__header-field"><span class="table__header-name">стандарт</span><br/><span class="table__header-cost">3,99 USD</span></td>
+          <td class="table__header-field"><span class="table__header-name">премиум</span><br/><span class="table__header-cost">4,99 USD</span></td>
+        </tr>
+        <tr class="table__item">
+          <td class="table__item-name">Розовый фильтр</td>
+          <td class="table__item-name">Розовый фильтр</td>
+          <td class="table__item-name">Розовый фильтр</td>
+        </tr>
+        <tr class="table__item">
+          <td class="table__item-name">Смайлики</td>
+          <td class="table__item-name">Смайлики</td>
+          <td class="table__item-name">Смайлики</td>
+        </tr>
+        <tr class="table__item">
+          <td class="table__item-name">Комментарии</td>
+          <td class="table__item-name">Комментарии</td>
+          <td class="table__item-name">Комментарии</td>
+        </tr>
+      </table>
+    </div>
   </main>
   <footer calss="footer">
-    <article class="contacts">
-      <section class="contacts__section">
-        <span class="contacts__heading">Остались вопросы? Свяжитесь с нами!</span>
-      </section>
-      <section class="contacts__data">
+    <div class="contacts">
+      <div class="contacts__section">
+        <p class="contacts__heading">Остались вопросы? Свяжитесь с нами!</p>
+      </div>
+      <div class="contacts__data">
         <span class="contacts__title">Звоните:</span>
         <address class="contacts__info">
           <a class="contacts__link" href="tel: +7(812)555-66-66">+7(812)555-66-66</a>
         </address>
-      </section>
-      <section class="contacts__data">
+      </div>
+      <div class="contacts__data">
         <span class="contacts__title">Пишите:</span>
         <address class="contacts__info">
           <a class="contacts__link" href="mailto: mail@htmlacademy.ru">mail@htmlacademy.ru</a>
         </address>
-      </section>
-      <section class="contacts__data">
+      </div>
+      <div class="contacts__data">
         <span class="contacts__title">Приезжайте в гости:</span>
         <address class="contacts__info">
           <a class="contacts__link" href="#">ул. Большая Конюшенная, 19/8</a>
         </address>
-      </section>
-    </article>
+      </div>
+    </div>
     <div class="map">
       <img class="map__img" src="http://placehold.it/300x300">
     </div>
