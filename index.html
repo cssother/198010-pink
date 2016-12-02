@@ -3,27 +3,30 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Пинк</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body class="body">
   <header class="header">
-    <div class="header-top">
-      <div class="main-logo">
-        <a href="" class="main-logo__link">
-          <img class="main-logo__icon" src="http://placehold.it/30x30">
-        </a>
+    <div class="header-wrapper">
+      <div class="header-top">
+        <div class="main-logo">
+          <a href="" class="main-logo__link">
+            <img class="main-logo__icon" src="http://placehold.it/30x30">
+          </a>
+        </div>
+        <button type="button" class="header-top__button"></button>
+        <nav class="main-nav">
+          <ul class="main-nav__list">
+            <li class="main-nav__item"><a href="#" class="main-nav__link">Гланая</a></li>
+            <li class="main-nav__item"><a href="#" class="main-nav__link">Фотографии</a></li>
+            <li class="main-nav__item"><a href="#" class="main-nav__link">Конкурс</a></li>
+            <li class="main-nav__item"><a href="#" class="main-nav__link">HTML Academy</a></li>
+          </ul>
+        </nav>
       </div>
-      <button type="button" class="header-top__button"></button>
-    </div>
-    <nav class="main-nav">
-      <ul class="main-nav__list">
-        <li class="main-nav__item"><a href="#" class="main-nav__link">Гланая</a></li>
-        <li class="main-nav__item"><a href="#" class="main-nav__link">Фотографии</a></li>
-        <li class="main-nav__item"><a href="#" class="main-nav__link">Конкурс</a></li>
-        <li class="main-nav__item"><a href="#" class="main-nav__link">HTML Academy</a></li>
-      </ul>
-    </nav>
-    <div class="header-intro">
-      <img class="header-intro__img" src="http://placehold.it/150x200">
+      <div class="header-intro">
+        <img class="header-intro__img" src="http://placehold.it/150x200">
+      </div>
     </div>
   </header>
   <main class="main">
@@ -32,9 +35,9 @@
         <a href="#" class="download-app__link">Скачать приложение</a>
       </div>
       <div class="download-block__icon-wrap">
-        <div class="download-block__icon">IOS</div>
-        <div class="download-block__icon">Android</div>
-        <div class="download-block__icon">Windows</div>
+      <div class="download-block__icon download-block__icon-iOS">IOS</div>
+        <div class="download-block__icon download-block__icon-android">Android</div>
+        <div class="download-block__icon download-block__icon-windows">Windows</div>
       </div>
       <p class="download-block__info">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
     </div>
@@ -57,7 +60,7 @@
           <p class="feature__text">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
         </li>
       </ul>
-        <img src="http://placehold.it/150x300" alt="" class="description__img">
+      <img src="http://placehold.it/150x300" alt="" class="description__img">
 
     </div>
     <blockquote class="comment">
@@ -98,13 +101,13 @@
         <p class="contacts__heading-text">Остались вопросы? Свяжитесь с нами!</p>
       </div>
       <div class="contacts__data">
-        <span class="contacts__title">Звоните:</span>
+        <h2 class="contacts__title">Звоните:</h2>
         <address class="contacts__info">
           <a class="contacts__link" href="tel: +7(812)555-66-66">+7(812)555-66-66</a>
         </address>
       </div>
       <div class="contacts__data">
-        <span class="contacts__title">Пишите:</span>
+        <h2 class="contacts__title">Пишите:</h2>
         <address class="contacts__info">
           <a class="contacts__link" href="mailto: mail@htmlacademy.ru">mail@htmlacademy.ru</a>
         </address>
