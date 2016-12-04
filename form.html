@@ -4,27 +4,30 @@
   <meta charset="utf-8">
   <title>HTML Academy: Пинк</title>
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/normalize.css">
 </head>
 <body class="body">
   <header class="header">
-    <div class="header-top">
-      <div class="main-logo">
-        <a href="" class="main-logo__link">
-          <img class="main-logo__icon" src="http://placehold.it/30x30">
-        </a>
+    <div class="header-wrapper">
+      <div class="header-top">
+        <div class="main-logo">
+          <a href="" class="main-logo__link">
+            <img class="main-logo__icon" src="http://placehold.it/30x30">
+          </a>
+        </div>
+        <button type="button" class="header-top__button"></button>
       </div>
-      <button type="button" class="header-top__button"></button>
-    </div>
-    <nav class="main-nav">
-      <ul class="main-nav__list">
-        <li class="main-nav__item"><a href="#" class="main-nav__link">Гланая</a></li>
-        <li class="main-nav__item"><a href="#" class="main-nav__link">Фотографии</a></li>
-        <li class="main-nav__item"><a href="#" class="main-nav__link">Конкурс</a></li>
-        <li class="main-nav__item"><a href="#" class="main-nav__link">HTML Academy</a></li>
-      </ul>
-    </nav>
-    <div class="header-intro">
-      <div class="header-intro__text">Конкурс на самое безбашенное путешествие с Пинк</div>
+      <nav class="main-nav">
+        <ul class="main-nav__list">
+          <li class="main-nav__item"><a href="#" class="main-nav__link">Гланая</a></li>
+          <li class="main-nav__item"><a href="#" class="main-nav__link">Фотографии</a></li>
+          <li class="main-nav__item"><a href="#" class="main-nav__link">Конкурс</a></li>
+          <li class="main-nav__item"><a href="#" class="main-nav__link">HTML Academy</a></li>
+        </ul>
+      </nav>
+      <div class="header-intro">
+        <div class="header-intro__text">Конкурс на самое безбашенное путешествие с Пинк</div>
+      </div>
     </div>
   </header>
   <main class="main">
@@ -83,7 +86,7 @@
         </label>
       </div>
       <div class="field-text">
-        <div class="field-text__title field-tel__title--visibility">Укажите номер телефона</div>
+        <div class="field-text__title field-text__title--visibility">Укажите номер телефона</div>
         <label class="field-text__item">
           <input class="field-text__input" type="tel" name="tel" placeholder="Номер, пожалуйста">
           <span class="field-text__text">Номер телефона</span>
@@ -114,10 +117,12 @@
           <span class="field-radio__text">Windows Phone</span>
         </label>
       </div>
-      <div class="form__heading-section">Опишите свои эмоции</div>
-      <textarea name="emotions" cols="30" rows="10" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+      <div class="field-text">
+      <div class="field-text__title">Опишите свои эмоции</div>
+        <textarea class="field-text__input" name="emotions" cols="20" rows="7" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+      </div>
       <button type="submit" class="form-button">Отправить форму</button>
-      <span class="form__mark">*-обязательные поля</span>
+      <div class="form__endnote"><span class="form__mark">* </span>— обязательные поля</div>
     </form>
   </main>
   <footer class="footer">
@@ -128,19 +133,19 @@
         </a>
       </div>
     </div>
-      <div class="social">
-        <ul class="social__list">
-          <li cass="social__item"><a class="social__link" href="#">twitter</a></li>
-          <li cass="social__item"><a class="social__link" href="#">facebook</a></li>
-          <li cass="social__item"><a class="social__link" href="#">youtube</a></li>
-        </ul>
-      </div>
-      <div class="copyright">
-        <span class="copyright__text">Разработано</span>
-        <a href="#" class="copyright__link">
-          <img class="copyright__icon" src="http://placehold.it/20x25" alt="">
-        </a>
-      </div>
+    <div class="social">
+      <ul class="social__list">
+        <li cass="social__item"><a class="social__link" href="#">twitter</a></li>
+        <li cass="social__item"><a class="social__link" href="#">facebook</a></li>
+        <li cass="social__item"><a class="social__link" href="#">youtube</a></li>
+      </ul>
+    </div>
+    <div class="copyright">
+      <span class="copyright__text">Разработано</span>
+      <a href="#" class="copyright__link">
+        <img class="copyright__icon" src="http://placehold.it/20x25" alt="">
+      </a>
+    </div>
   </footer>
 </body>
 </html>
