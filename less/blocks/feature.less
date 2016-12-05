@@ -1,13 +1,11 @@
 .feature {
   .container();
+  background-color: @grey-color;
+  padding-top: 40px;
 }
 
 .feature__wrapper {
   margin: 0 20px;
-}
-
-.feater__inner-wrap {
-  background-color: @grey-color;
 }
 
 .feature__heading {
@@ -17,15 +15,24 @@
 }
 
 .feature__list {
-  color: @basic-text;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  color: #000;
+}
+
+.feature__list {
+  text-align: center;
 }
 
 .feature__title {
-  font-size: 24px;
+  font-size: @font-size;
+  line-height: 24px;
   font-weight: @font-weight-bold;
-  line-height: 10px;
 }
 
 .feature__text {
+  color: @basic-text;
+  font-size: 14px;
   line-height: 24px;
 }
