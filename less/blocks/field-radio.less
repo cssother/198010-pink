@@ -1,13 +1,17 @@
 .field-radio {
-  padding: 30px 20px;
   background-color: @grey-color;
 }
 
+.field-radio__wrapper {
+  padding: 30px 20px;
+}
+
 .field-radio__title {
-  margin: 0 50px 30px 50px;
+  margin-bottom: 30px;
   text-align: center;
   color: @accented-text;
   line-height: @line-height;
+  text-transform: uppercase;
 }
 
 .field-radio__item {
@@ -20,4 +24,9 @@
 
 .field-radio__item:last-child {
   margin-bottom: 0;
+}
+
+.field-radio__text {
+  font-size: @font-size;
+  color: @basic-text;
 }
