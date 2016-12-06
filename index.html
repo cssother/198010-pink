@@ -3,66 +3,85 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Пинк</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/normalize.css">
 </head>
 <body class="body">
   <header class="header">
-    <div class="header-top">
-      <div class="main-logo">
-        <a href="" class="main-logo__link">
-          <img class="main-logo__icon" src="http://placehold.it/30x30">
-        </a>
+    <div class="header__bg-top">
+      <div class="header__wrapper">
+        <div class="main-logo">
+          <a href="" class="main-logo__link">
+            <img class="main-logo__icon" src="http://placehold.it/30x30">
+          </a>
+        </div>
+        <button type="button" class="header__button"></button>
       </div>
-      <button type="button" class="header-top__button"></button>
     </div>
     <nav class="main-nav">
       <ul class="main-nav__list">
-        <li class="main-nav__item"><a href="#" class="main-nav__link">Гланая</a></li>
-        <li class="main-nav__item"><a href="#" class="main-nav__link">Фотографии</a></li>
-        <li class="main-nav__item"><a href="#" class="main-nav__link">Конкурс</a></li>
-        <li class="main-nav__item"><a href="#" class="main-nav__link">HTML Academy</a></li>
+        <li class="main-nav__item">
+        <a class="main-nav__link">Гланая</a>
+        </li>
+        <li class="main-nav__item">
+          <a href="photo.html" class="main-nav__link">Фотографии</a>
+        </li>
+        <li class="main-nav__item">
+          <a href="form.html" class="main-nav__link">Конкурс</a>
+        </li>
+        <li class="main-nav__item">
+          <a href="#" class="main-nav__link">HTML Academy</a>
+        </li>
       </ul>
     </nav>
-    <div class="header-intro">
-      <img class="header-intro__img" src="http://placehold.it/150x200">
+    <div class="header__intro">
+      <img class="header__intro-img" src="http://placehold.it/150x200">
     </div>
   </header>
-  <main class="main">
-    <div class="download-block">
+  <div class="download-block">
+    <div class="download-block__wrapper">
       <div class="download-app">
         <a href="#" class="download-app__link">Скачать приложение</a>
       </div>
       <div class="download-block__icon-wrap">
-        <div class="download-block__icon">IOS</div>
-        <div class="download-block__icon">Android</div>
-        <div class="download-block__icon">Windows</div>
+        <div class="download-block__icon download-block__icon-iOS">IOS</div>
+        <div class="download-block__icon download-block__icon-android">Android</div>
+        <div class="download-block__icon download-block__icon-windows">Windows</div>
       </div>
       <p class="download-block__info">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
     </div>
-    <div class="feature">
-      <div class="feature__heading">
-        <p>Устали от серости мегаполиса?</p>
-        <p>Нам есть, что вам предложить!</p>
+  </div>
+  <main class="main">
+    <div class="main-intro">
+      <div class="main-intro__wrapper">
+        <p class="main-intro__text">Устали от серости мегаполиса?</p>
+        <p class="main-intro__text">Нам есть, что вам предложить!</p>
       </div>
-      <ul class="feature__list">
-        <li class="feature__item">
-          <h2 class="feature__title">Поднимает настроение</h2>
-          <p class="feature__text">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
-        </li>
-        <li class="feature__item">
-          <h2 class="feature__title">Меняет мир вокруг</h2>
-          <p class="feature__text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
-        </li>
-        <li class="feature__item">
-          <h2 class="feature__title">Заводит новых друзей</h2>
-          <p class="feature__text">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
-        </li>
-      </ul>
+    </div>
+    <div class="feature">
+      <div class="feature__wrapper">
+        <ul class="feature__list">
+          <li class="feature__item">
+            <h2 class="feature__title">Поднимает настроение</h2>
+            <p class="feature__text">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+          </li>
+          <li class="feature__item">
+            <h2 class="feature__title">Меняет мир вокруг</h2>
+            <p class="feature__text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+          </li>
+          <li class="feature__item">
+            <h2 class="feature__title">Заводит новых друзей</h2>
+            <p class="feature__text">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
+          </li>
+        </ul>
         <img src="http://placehold.it/150x300" alt="" class="description__img">
-
+      </div>
     </div>
     <blockquote class="comment">
-      <cite class="comment__user-name">Николай Петров</cite>
-      <p class="comment__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+      <div class="comment__wrapper">
+        <cite class="comment__user-name">Николай Петров</cite>
+        <p class="comment__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+      </div>
     </blockquote>
     <div class="price">
       <input class="toggle-btn" type="radio" id="price__btn-1" name="toggle">
@@ -94,26 +113,28 @@
   </main>
   <footer calss="footer">
     <div class="contacts">
-      <div class="contacts__heading">
-        <p class="contacts__heading-text">Остались вопросы? Свяжитесь с нами!</p>
-      </div>
-      <div class="contacts__data">
-        <span class="contacts__title">Звоните:</span>
-        <address class="contacts__info">
-          <a class="contacts__link" href="tel: +7(812)555-66-66">+7(812)555-66-66</a>
-        </address>
-      </div>
-      <div class="contacts__data">
-        <span class="contacts__title">Пишите:</span>
-        <address class="contacts__info">
-          <a class="contacts__link" href="mailto: mail@htmlacademy.ru">mail@htmlacademy.ru</a>
-        </address>
-      </div>
-      <div class="contacts__data">
-        <h2 class="contacts__title">Приезжайте в гости:</h2>
-        <address class="contacts__info">
-          <a class="contacts__link" href="#">ул. Большая Конюшенная, 19/8</a>
-        </address>
+      <div class="contacts__wrapper">
+        <div class="contacts__heading">
+          <p class="contacts__heading-text">Остались вопросы? Свяжитесь с нами!</p>
+        </div>
+        <div class="contacts__data">
+          <h2 class="contacts__title">Звоните:</h2>
+          <address class="contacts__info">
+            <a class="contacts__link" href="tel: +7(812)555-66-66">+7(812)555-66-66</a>
+          </address>
+        </div>
+        <div class="contacts__data">
+          <h2 class="contacts__title">Пишите:</h2>
+          <address class="contacts__info">
+            <a class="contacts__link" href="mailto: mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+          </address>
+        </div>
+        <div class="contacts__data">
+          <h2 class="contacts__title">Приезжайте в гости:</h2>
+          <address class="contacts__info">
+            <a class="contacts__link" href="#">ул. Большая Конюшенная, 19/8</a>
+          </address>
+        </div>
       </div>
     </div>
     <div class="map">
