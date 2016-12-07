@@ -1,19 +1,37 @@
 
 .header {
   .container();
-  background: #2b3b4b url("../img/bg-back-mobile@1x.jpg") no-repeat;
 }
 
-.header__bg-top {
+.header__top-content {
+  position: relative;
+  top: 68px;
+  min-height: 65px;
   background-color: rgba(0, 0, 0, 0.3);
 }
 
+.header__top-content--opened {
+  background-color: @text-color;
+  border-bottom: 1px solid #000;
+}
+
 .header__wrapper {
+  display: flex;
+  justify-content: space-between;
   padding: 20px;
 }
 
-.header__top {
-  padding: 20px;
+.header__intro {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  min-height: 680px;
+  background: #2b3b4b url("../img/bg-back-mobile@1x.jpg") no-repeat 50% 50%;
+  background-position: 50% 0;
+}
+
+.header__intro-img {
+  align-self: flex-start;
 }
 
 .header__intro-wrap {
@@ -25,4 +43,39 @@
   font-size: 24px;
   text-align: center;
   font-weight: @font-weight-light;
+}
+
+.header__button {
+  position: relative;
+  width: 50px;
+  height: 25px;
+
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  outline: none;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 10px;
+    left: 0;
+    width: 50px;
+    height: 4px;
+    background-color: #fff;
+    box-shadow: 0px 11px 0px 0px rgb(255, 255, 255),
+    0px -11px 0px 0px rgb(255, 255, 255);
+  }
+
+  &:hover::before {
+    background-color: @accented-text-color;
+    box-shadow: 0px 11px 0px 0px @accented-text-color,
+    0px -11px 0px 0px @accented-text-color;
+  }
+
+  &:active::before {
+    background-color: rgba(210, 40, 86, 0.3);
+    box-shadow: 0px 11px 0px 0px rgba(210, 40, 86, 0.3),
+    0px -11px 0px 0px rgba(210, 40, 86, 0.3);
+  }
 }
