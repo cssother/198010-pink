@@ -1,13 +1,7 @@
-
-.header {
-  .container();
-}
-
 .header__top-content {
   position: relative;
   top: 68px;
   min-height: 65px;
-  background-color: rgba(0, 0, 0, 0.3);
 }
 
 .header__top-content--opened {
@@ -16,26 +10,32 @@
 }
 
 .header__wrapper {
+  .container();
   display: flex;
   justify-content: space-between;
-  padding: 20px;
+  padding-top: 20px ;
+  padding-bottom: 20px;
+  background-color: rgba(0, 0, 0, 0.3);
 }
 
 .header__intro {
+  min-height: 680px;
+  width: 320px;
+  margin: 0 auto;
+
+}
+
+.header__intro-wrap {
+
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  min-height: 680px;
   background: #2b3b4b url("../img/bg-back-mobile@1x.jpg") no-repeat 50% 50%;
   background-position: 50% 0;
 }
 
 .header__intro-img {
   align-self: flex-start;
-}
-
-.header__intro-wrap {
-  padding: 25px 20px;
 }
 
 .header__intro-text {
