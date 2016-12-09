@@ -1,4 +1,6 @@
 .main-nav {
+  .container();
+  margin-top: 65px;
   display: none;
 }
 
@@ -30,4 +32,15 @@
   font-weight: @font-weight-bold;
   text-decoration: none;
   text-transform: uppercase;
+}
+
+@media @tablet-widths {
+
+  .main-nav {
+    display: block;
+    margin-top: 68px;
+  }
+
+  .main-nav__item {
+  }
 }
