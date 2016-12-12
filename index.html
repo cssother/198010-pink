@@ -8,8 +8,8 @@
 </head>
 <body class="body">
   <header class="header">
-    <div class="header__top-content">
-      <div class="header__wrapper">
+    <div class="header-top">
+      <div class="header-top__wrapper">
         <div class="main-logo">
           <a href="" class="main-logo__link">
             <img class="main-logo__icon" src="img/logo-pink-white-mobile.svg" width="75" height="25">
@@ -18,7 +18,7 @@
         <button type="button" class="header__button"></button>
       </div>
     </div>
-    <nav class="main-nav">
+    <nav class="main-nav  main-nav--closed">
       <ul class="main-nav__list">
         <li class="main-nav__item">
           <a class="main-nav__link">Гланая</a>
@@ -36,20 +36,31 @@
     </nav>
     <div class="header-intro">
       <div class="header-intro__wrapper">
-        <img class="header-intro__img" src="img/iphone-hand-mobile@1x.png" width="258" height="286">
         <div class="header-intro__text  header-intro__text--visibility">Взгляните на жизнь иначе!</div>
-        <div class="download-block">
-          <div class="download-block__wrapper">
-            <div class="download-app">
-              <a href="#" class="download-app__link">Скачать приложение</a>
-            </div>
-            <div class="download-block__icon-wrap">
-              <div class="download-block__icon download-block__icon-iOS">IOS</div>
-              <div class="download-block__icon download-block__icon-android">Android</div>
-              <div class="download-block__icon download-block__icon-windows">Windows</div>
-            </div>
-            <p class="download-block__info">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+      </div>
+      <div class="download-block">
+        <div class="download-block__wrapper">
+          <div class="download-app">
+            <a href="#" class="download-app__link">Скачать приложение</a>
           </div>
+          <div class="download-block__icon-wrap">
+            <div class="download-block__icon download-block__icon-iOS">
+              <a class="download-block__icon-link" href="#">IOS
+                <img src="img/#">
+              </a>
+            </div>
+            <div class="download-block__icon download-block__icon-android">
+              <a class="download-block__icon-link" href="#">Android
+                <img src="img/#">
+              </a>
+            </div>
+            <div class="download-block__icon download-block__icon-windows">
+              <a class="download-block__icon-link" href="#">Windows
+                <img src="img/#">
+              </a>
+            </div>
+          </div>
+          <p class="download-block__info">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
         </div>
       </div>
     </div>

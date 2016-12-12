@@ -1,0 +1,22 @@
+.header-top {
+  background-color: rgba(0, 0, 0, 0.3);
+
+  &--opened {
+    background-color: @text-color;
+    border-bottom: 1px solid #000;
+  }
+}
+
+.header-top__wrapper {
+  .container();
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+
+  @media @tablet-widths {
+    height: 110px;
+    padding: 0 40px;
+  }
+
+}

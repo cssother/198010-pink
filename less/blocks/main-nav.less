@@ -1,14 +1,14 @@
 .main-nav {
-  .container();
-  margin-top: 65px;
-  display: none;
+
+  &--closed {
+    display: none;
+  }
 }
 
 .main-nav__list {
   display: flex;
   flex-direction: column;
   align-items: center;
-
   margin: 0;
   padding: 0;
   list-style: none;
@@ -32,15 +32,4 @@
   font-weight: @font-weight-bold;
   text-decoration: none;
   text-transform: uppercase;
-}
-
-@media @tablet-widths {
-
-  .main-nav {
-    display: block;
-    margin-top: 68px;
-  }
-
-  .main-nav__item {
-  }
 }
