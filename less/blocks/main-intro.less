@@ -1,14 +1,29 @@
-.main-intro {
+.main-intro__wrapper {
   .container();
   text-align: center;
-}
-
-.main-intro__wrapper {
-  margin: 0 20px;
 }
 
 .main-intro__text {
   font-weight: @font-weight-light;
   color: @text-color;
   font-size: 24px;
+
+  &--narrow-block {
+
+    @media @tablet-widths {
+      margin: 0 140px;
+    }
+
+    @media @desktop-widths {
+      margin: 0 260px;
+    }
+  }
+
+  @media @tablet-widths {
+    font-size: 40px;
+  }
+
+  @media @desktop-widths {
+    font-size: 50px;
+  }
 }
