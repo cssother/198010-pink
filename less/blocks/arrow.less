@@ -1,0 +1,27 @@
+.arrow__link {
+  display: none;
+  font-size: 0;
+  margin: 0;
+  padding: 0;
+  width: 30px;
+  height: 30px;
+  border: 2px solid #bec2c7;
+  border-right: none;
+  border-top: none;
+
+  &--rev {
+    transform: rotate(45deg);
+  }
+
+  &--next {
+    transform: rotate(-135deg);
+  }
+
+  @media @tablet-widths {
+        order: 1;
+  }
+
+  @media @desktop-widths {
+    display: block;
+  }
+}

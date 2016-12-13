@@ -107,13 +107,39 @@
     <blockquote class="comment">
       <div class="comment__wrapper">
         <cite class="comment__user-name">Николай Петров</cite>
-        <p class="comment__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+        <div class="comment__user-data  comment__user-data--visibility">25 лет, водитель трамвая</div>
+        <div class="comment__info">
+          <div class="arrow">
+            <a href="#" class="arrow__link  arrow__link--rev">предыдущий отзыв</a>
+          </div>
+          <p class="comment__text"><span>«</span>Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!<span>»</span></p>
+          <div class="arrow">
+            <a href="#" class="arrow__link  arrow__link--next">следующий отзыв</a>
+          </div>
+        </div>
+        <div class="toggle toggle__comment  toggle__comment--visibility">
+          <div class="toggle__wrapper">
+            <input class="toggle__input" id="comment-1" type="radio" name="comment">
+            <label class="toggle__item" for="comment-1"></label>
+            <input class="toggle__input" id="comment-2"  type="radio" name="comment" checked>
+            <label class="toggle__item" for="comment-2"></label>
+            <input class="toggle__input" id="comment-3" type="radio" name="comment">
+            <label class="toggle__item" for="comment-3"></label>
+          </div>
+        </div>
       </div>
     </blockquote>
     <div class="price">
-      <input class="toggle-btn" type="radio" id="price__btn-1" name="toggle">
-      <input class="toggle-btn" type="radio" id="price__btn-2" name="toggle" checked>
-      <input class="toggle-btn" type="radio" id="price__btn-3" name="toggle">
+      <div class="toggle">
+        <div class="toggle__wrapper">
+          <input class="toggle__input" id="price-1" type="radio" name="price">
+          <label class="toggle__item" for="price-1"></label>
+          <input class="toggle__input" id="price-2"  type="radio" name="price" checked>
+          <label class="toggle__item" for="price-2"></label>
+          <input class="toggle__input" id="price-3" type="radio" name="price">
+          <label class="toggle__item" for="price-3"></label>
+        </div>
+      </div>
       <table calss="table">
         <tr class="table__header">
           <td class="table__header-field"><span class="table__header-name">мини</span><br/><span class="table__header-cost">2,99 USD</span></td>
