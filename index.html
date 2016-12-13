@@ -130,38 +130,53 @@
       </div>
     </blockquote>
     <div class="price">
-      <div class="toggle">
-        <div class="toggle__wrapper">
-          <input class="toggle__input" id="price-1" type="radio" name="price">
-          <label class="toggle__item" for="price-1"></label>
-          <input class="toggle__input" id="price-2"  type="radio" name="price" checked>
-          <label class="toggle__item" for="price-2"></label>
-          <input class="toggle__input" id="price-3" type="radio" name="price">
-          <label class="toggle__item" for="price-3"></label>
+      <div class="price__wrapper">
+        <table class="table">
+          <tr class="table__header">
+            <td class="table__header-field  table__header-field--visibility"></td>
+            <td class="table__header-field">
+              <span class="table__header-name">база</span><br/>
+              <span class="table__header-cost">1,99 USD</span>
+            </td>
+            <td class="table__header-field">
+              <span class="table__header-name">стандарт</span><br/>
+              <span class="table__header-cost">3,99 USD</span>
+            </td>
+            <td class="table__header-field">
+              <span class="table__header-name">анлим</span><br/>
+              <span class="table__header-cost">9,99 USD</span>
+            </td>
+          </tr>
+          <tr class="table__item">
+            <td class="table__item-title">Розовый фильтр</td>
+            <td class="table__item-name">Розовый фильтр</td>
+            <td class="table__item-name">Розовый фильтр</td>
+            <td class="table__item-name">Розовый фильтр</td>
+          </tr>
+          <tr class="table__item">
+            <td class="table__item-title">Смайлики</td>
+            <td class="table__item-name  table__item-name--missing">Смайлики</td>
+            <td class="table__item-name">Смайлики</td>
+            <td class="table__item-name">Смайлики</td>
+          </tr>
+          <tr class="table__item">
+            <td class="table__item-title">Комментарии</td>
+            <td class="table__item-name  table__item-name--missing">Комментарии</td>
+            <td class="table__item-name  table__item-name--missing">Комментарии</td>
+            <td class="table__item-name">Комментарии</td>
+          </tr>
+        </table>
+        <div class="toggle price__toggle">
+          <div class="toggle__wrapper">
+            <input class="toggle__input" id="price-1" type="radio" name="price">
+            <label class="toggle__item" for="price-1"></label>
+            <input class="toggle__input" id="price-2"  type="radio" name="price" checked>
+            <label class="toggle__item" for="price-2"></label>
+            <input class="toggle__input" id="price-3" type="radio" name="price">
+            <label class="toggle__item" for="price-3"></label>
+          </div>
         </div>
       </div>
-      <table calss="table">
-        <tr class="table__header">
-          <td class="table__header-field"><span class="table__header-name">мини</span><br/><span class="table__header-cost">2,99 USD</span></td>
-          <td class="table__header-field"><span class="table__header-name">стандарт</span><br/><span class="table__header-cost">3,99 USD</span></td>
-          <td class="table__header-field"><span class="table__header-name">премиум</span><br/><span class="table__header-cost">4,99 USD</span></td>
-        </tr>
-        <tr class="table__item">
-          <td class="table__item-name">Розовый фильтр</td>
-          <td class="table__item-name">Розовый фильтр</td>
-          <td class="table__item-name">Розовый фильтр</td>
-        </tr>
-        <tr class="table__item">
-          <td class="table__item-name">Смайлики</td>
-          <td class="table__item-name">Смайлики</td>
-          <td class="table__item-name">Смайлики</td>
-        </tr>
-        <tr class="table__item">
-          <td class="table__item-name">Комментарии</td>
-          <td class="table__item-name">Комментарии</td>
-          <td class="table__item-name">Комментарии</td>
-        </tr>
-      </table>
     </div>
   </main>
   <footer calss="footer">
