@@ -1,13 +1,27 @@
-.topic-name {
-  .container();
-}
-
 .topic-name__wrapper {
-  padding: 35px 25px;
+  .container();
 }
 
 .topic-name__text {
   color: @text-color;
   text-align: center;
   line-height: 30px;
+  margin: 45px 0;
+
+  @media @tablet-widths {
+    margin: 90px 50px 50px 50px;
+    font-size: @font-size;
+  }
+
+  @media @desktop-widths {
+    margin: 90px 90px 60px 90px;
+
+  }
+}
+
+.topic-name__hidden {
+
+  @media @only-mobile-widths {
+    display: none;
+  }
 }
