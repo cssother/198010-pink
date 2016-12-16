@@ -1,5 +1,11 @@
 .field-text__wrapper {
-  padding: 30px 20px;
+  .container();
+  margin-bottom: 30px;
+  margin-top: 40px;
+
+  &--indent {
+    margin-bottom: -40px;
+  }
 }
 
 .field-text__title {
@@ -15,15 +21,39 @@
 }
 
 .field-text__item {
+  display: flex;
+  flex-direction: column-reverse;
   line-height: 30px;
   color: @accented-text-color;
   text-transform: uppercase;
+
+  @media @tablet-widths {
+    flex-direction: row-reverse;
+    align-items: center;
+    margin-bottom: 50px;
+  }
 }
 
 .field-text__input {
-  min-width: 240px;
+  min-width: 238px;
+  margin-bottom: 25px;
   padding: 5px 20px;
   line-height: 30px;
   font-size: @font-size;
   color: @text-color;
+
+  @media @tablet-widths {
+    flex-grow: 1;
+    margin: 0;
+  }
+}
+
+.field-text__text {
+  margin-bottom: 10px;
+  margin-left: 20px;
+
+  @media @tablet-widths {
+    margin: 0;
+    margin-right: 20px;
+  }
 }
