@@ -4,19 +4,39 @@
   justify-content: center;
   margin: 0;
   padding-top: 460px;
-  background: url("../img/iphone-hand-mobile@1x.png") 0 0 no-repeat,
-              url("../img/bg-back-mobile@1x.jpg") 50% 50% no-repeat;
-  background-position: center 174px, center top;
-  background-size: auto, auto 489px;
+  background: url("../img/bg-back-mobile@1x.jpg") 50% 50% no-repeat;
+  background-position: center top;
+  background-size: auto 489px;
 
-  @media @tablet-widths {
-    margin: auto 0;
-    padding-top: 200px;
-    padding-bottom: 100px;
-    background-size: auto auto, 100% 100%;
-    background-position: center bottom, center center;
+  &--bg {
+    background: url("../img/iphone-hand-mobile@1x.png") 0 0 no-repeat,
+    url("../img/bg-back-mobile@1x.jpg") 50% 50% no-repeat;
+    background-position: center 174px, center top;
+    background-size: auto, auto 489px;
+
+    @media @tablet-widths {
+      margin: auto 0;
+      padding-top: 200px;
+      padding-bottom: 100px;
+      background-size: auto auto, 100% 100%;
+      background-position: center bottom, center center;
+    }
   }
 
+  &--form {
+    padding-top: 95px;
+    padding-bottom: 50px;
+
+    @media @tablet-widths {
+      padding-top: 175px;
+      padding-bottom: 35px;
+      background-size: cover;
+    }
+
+    @media @desktop-widths {
+      padding-bottom: 55px;
+    }
+  }
 }
 
 .header-intro__wrapper {
@@ -53,5 +73,14 @@
 
   @media @desktop-widths {
     font-size: 50px;
+  }
+
+  &--resize {
+    width: auto;
+
+    @media @tablet-widths {
+      padding: 0 70px;
+    }
+
   }
 }
