@@ -1,17 +1,35 @@
 .field-checkbox {
   background-color: @grey-color;
+  margin-bottom: 35px;
+
+  @media @tablet-widths {
+    order: 4;
+    background-color: #fff;
+    margin-bottom: 50px;
+  }
 }
 
 .field-checkbox__wrapper {
   .container();
   padding-top: 40px;
   padding-bottom: 45px;
+
+  @media @desktop-widths {
+    margin: 0;
+    padding: 0;
+  }
 }
 
 .field-checkbox__fieldset {
+  padding: 0;
+  margin: 0;
 
   @media @only-mobile-widths {
     border: none;
+  }
+
+  @media @tablet-widths {
+    padding: 60px;
   }
 }
 
@@ -23,6 +41,11 @@
   color: @accented-text-color;
   text-transform: uppercase;
   text-align: center;
+
+  @media @tablet-widths {
+    margin: 0;
+    padding: 0 20px;
+  }
 }
 
 .field-checkbox__item {

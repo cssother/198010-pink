@@ -1,12 +1,66 @@
+.field-text {
+  margin-bottom: 30px;
+
+  @media @tablet-widths {
+
+    &--position-1 {
+      order: 1;
+    }
+
+    &--position-2 {
+      order: 3;
+    }
+
+    &--position-3 {
+      order: 5;
+    }
+  }
+
+  @media @desktop-widths {
+
+    &--position-1 {
+      width: 435px;
+    }
+
+    &--position-2 {
+      width: 100%;
+    }
+
+    &--position-3 {
+      width: 100%;
+    }
+  }
+}
+
 .field-text__wrapper {
   .container();
-  margin-bottom: 30px;
-  margin-top: 40px;
+
+  @media @desktop-widths {
+    margin: 0;
+    padding: 0;
+    width: auto;
+  }
 }
 
 .field-text__fieldset {
-  border: none;
+  padding: 0;
+  margin: 0;
+
+  @media @only-mobile-widths {
+    border: none;
+  }
+
+  @media @tablet-widths {
+    padding: 50px 60px 0 60px;
+  }
 }
+
+// .field-text__input-wrap {
+
+//   @media @desktop-widths {
+//     display: flex;
+//   }
+// }
 
 .field-text__title {
   margin-bottom: 15px;
@@ -14,10 +68,31 @@
   text-align: center;
   line-height: @line-height;
   text-transform: uppercase;
+
+  @media @tablet-widths {
+    padding: 0 20px;
+    margin: 0;
+  }
 }
 
 .field-text__title--visibility {
   display: none;
+
+  @media @tablet-widths {
+    display: block;
+  }
+}
+
+.field-text__input-wrap {
+
+  @media @desktop-widths {
+
+    &--order {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
 }
 
 .field-text__item {
@@ -27,24 +102,81 @@
   color: @accented-text-color;
   text-transform: uppercase;
 
+  &:last-child {
+    margin-bottom: 0;
+  }
+
   @media @tablet-widths {
     flex-direction: row-reverse;
     align-items: center;
     margin-bottom: 50px;
+
+    &--order {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      margin-bottom: 30px;
+
+      &:last-child {
+        margin-bottom: 30px;
+      }
+    }
+  }
+
+  @media @desktop-widths {
+    width: 435px;
+
+    &--order {
+      width: 375px;
+      margin-bottom: 20px;
+
+      &:last-child {
+        margin-bottom: 20px;
+      }
+    }
+  }
+}
+
+.field-text__item--order .field-text__text {
+
+  @media @tablet-widths {
+    margin-top: 10px;
+    margin-left: 20px;
   }
 }
 
 .field-text__input {
   min-width: 238px;
   margin-bottom: 25px;
-  padding: 5px 20px;
+  padding: 15px 20px;
   line-height: 30px;
   font-size: @font-size;
   color: @text-color;
 
   @media @tablet-widths {
     flex-grow: 1;
+    align-self: stretch;
     margin: 0;
+  }
+}
+
+/* почему не работает псевдокласс???*/
+.field-text__item--order .field-text__input {
+
+  @media @tablet-widths {
+    position: relative;
+    padding-right: 60px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 60px;
+      height: 60px;
+      top: 50%;
+      margin-top: -30px;
+      right: 0;
+      background: #e5e5e5 url("http://placehold.it/30x30") 50% 50% no-repeat;
+    }
   }
 }
 
@@ -55,5 +187,29 @@
   @media @tablet-widths {
     margin: 0;
     margin-right: 20px;
+  }
+}
+
+.field-text__visible {
+
+  @media @tablet-widths {
+    display: none;
+  }
+}
+
+.field-text__textarea {
+  width: 100%;
+  padding: 20px;
+  margin: 0;
+  box-sizing: border-box;
+  font-size: @font-size;
+
+  @media @tablet-widths {
+    width: 100%;
+    margin-bottom: 50px;
+  }
+
+  @media @desktop-widths {
+
   }
 }
