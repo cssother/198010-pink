@@ -8,42 +8,46 @@
 </head>
 <body class="body">
   <header class="header">
-    <div class="header__bg-top">
-      <div class="header__wrapper">
-        <div class="main-logo">
-          <a href="" class="main-logo__link">
-            <img class="main-logo__icon" src="http://placehold.it/30x30">
-          </a>
+    <div class="header-top">
+      <div class="header-top__common-wrap">
+        <div class="header-top__wrapper">
+          <div class="main-logo">
+            <a href="" class="main-logo__link">
+              <img class="main-logo__icon" src="img/logo-pink-white-mobile.svg" width="75" height="25">
+            </a>
+          </div>
+          <button type="button" class="header__button"></button>
         </div>
-        <button type="button" class="header__button"></button>
+        <nav class="main-nav main-nav--closed">
+          <div class="main-nav__wrapper">
+            <ul class="main-nav__list">
+              <li class="main-nav__item">
+                <a href="index.html" class="main-nav__link">Главная</a>
+              </li>
+              <li class="main-nav__item">
+                <a href="photo.html" class="main-nav__link  main-nav__link--active">Фотографии</a>
+              </li>
+              <li class="main-nav__item">
+                <a href="form.html" class="main-nav__link">Конкурс</a>
+              </li>
+              <li class="main-nav__item">
+                <a href="#" class="main-nav__link">HTML Academy</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
       </div>
     </div>
-    <nav class="main-nav">
-      <ul class="main-nav__list">
-        <li class="main-nav__item">
-          <a href="index.html" class="main-nav__link">Гланая</a>
-        </li>
-        <li class="main-nav__item">
-          <a class="main-nav__link">Фотографии</a>
-        </li>
-        <li class="main-nav__item">
-          <a href="form.html" class="main-nav__link">Конкурс</a>
-        </li>
-        <li class="main-nav__item">
-          <a href="#" class="main-nav__link">HTML Academy</a>
-        </li>
-      </ul>
-    </nav>
-    <div class="header__intro">
-      <div class="header__intro-wrap">
-        <div class="header__intro-text">Фотографии пользователей</div>
+    <div class="header-intro  header-intro--photo">
+      <div class="header-intro__wrapper">
+        <div class="header-intro__text  header-intro__text--resize-photo">Фотографии пользователей</div>
       </div>
     </div>
   </header>
   <main class="main">
     <div class="topic-name">
       <div class="topic-name__wrapper">
-        <p class="topic-name__text">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
+        <p class="topic-name__text  topic-name__text--resize-photo">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
       </div>
     </div>
     <div class="posts">
@@ -169,5 +173,6 @@
       </div>
     </div>
   </footer>
+  <script src="js/script.js"></script>
 </body>
 </html>
