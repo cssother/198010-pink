@@ -45,6 +45,7 @@
 .field-text__fieldset {
   padding: 0;
   margin: 0;
+  border: 2px solid #e5e5e5;
 
   @media @only-mobile-widths {
     border: none;
@@ -145,6 +146,11 @@
   }
 }
 
+.field-text__input-with-icon {
+  display: flex;
+  width: 100%;
+}
+
 .field-text__input {
   min-width: 238px;
   margin-bottom: 25px;
@@ -152,6 +158,8 @@
   line-height: 30px;
   font-size: @font-size;
   color: @text-color;
+  border-color: #e5e5e5;
+  outline: none;
 
   @media @tablet-widths {
     flex-grow: 1;
@@ -160,23 +168,14 @@
   }
 }
 
-/* почему не работает псевдокласс???*/
-.field-text__item--order .field-text__input {
+.field-text__input-icon {
+  display: none;
 
   @media @tablet-widths {
-    position: relative;
-    padding-right: 60px;
-
-    &::before {
-      content: "";
-      position: absolute;
-      width: 60px;
-      height: 60px;
-      top: 50%;
-      margin-top: -30px;
-      right: 0;
-      background: #e5e5e5 url("http://placehold.it/30x30") 50% 50% no-repeat;
-    }
+    display: block;
+    width: 65px;
+    height: 65px;
+    background: #e5e5e5 url("http://placehold.it/30x30") 50% 50% no-repeat;
   }
 }
 
@@ -203,6 +202,7 @@
   margin: 0;
   box-sizing: border-box;
   font-size: @font-size;
+  border: 2px solid #e5e5e5;
 
   @media @tablet-widths {
     width: 100%;
