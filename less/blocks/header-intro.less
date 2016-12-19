@@ -1,0 +1,115 @@
+.header-intro {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0;
+  padding-top: 460px;
+  background: url("../img/bg-back-mobile@1x.jpg") 50% 50% no-repeat;
+  background-position: center top;
+  background-size: auto 489px;
+
+  &--bg {
+    background: url("../img/iphone-hand-mobile@1x.png") 0 0 no-repeat,
+    url("../img/bg-back-mobile@1x.jpg") 50% 50% no-repeat;
+    background-position: center 174px, center top;
+    background-size: auto, auto 489px;
+
+    @media @tablet-widths {
+      margin: auto 0;
+      padding-top: 200px;
+      padding-bottom: 100px;
+      background-size: auto auto, 100% 100%;
+      background-position: center bottom, center center;
+    }
+  }
+
+  &--form {
+    padding-top: 95px;
+    padding-bottom: 50px;
+
+    @media @tablet-widths {
+      padding-top: 175px;
+      padding-bottom: 70px;
+      background-size: cover;
+    }
+
+    @media @desktop-widths {
+      padding-bottom: 100px;
+    }
+  }
+
+  &--photo {
+    padding-top: 95px;
+    padding-bottom: 80px;
+
+    @media @tablet-widths {
+      padding-top: 180px;
+      padding-bottom: 135px;
+      background-size: cover;
+    }
+
+    @media @desktop-widths {
+      padding-top: 175px;
+      padding-bottom: 100px;
+    }
+  }
+}
+
+.header-intro__wrapper {
+  .container();
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.header-intro__img {
+  align-self: flex-start;
+}
+
+.header-intro__text {
+  color: #fff;
+  font-size: 24px;
+  text-align: center;
+  font-weight: @font-weight-light;
+
+  &--visibility {
+    display: none;
+
+    @media @tablet-widths {
+      display: block;
+    }
+  }
+
+  @media @tablet-widths {
+    width: 235px;
+    padding: 0 30px;
+    margin-bottom: 35px;
+    font-size: 40px;
+  }
+
+  @media @desktop-widths {
+    font-size: 50px;
+  }
+
+  &--resize-form {
+    width: auto;
+    margin-bottom: 0;
+
+    @media @tablet-widths {
+      padding: 0 70px;
+    }
+  }
+
+  &--resize-photo {
+    width: auto;
+    margin-bottom: 0;
+
+    @media @tablet-widths {
+      padding: 0 125px;
+    }
+
+    @media @desktop-widths {
+      padding: 0 150px;
+    }
+  }
+}

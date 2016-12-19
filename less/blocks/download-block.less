@@ -1,19 +1,42 @@
 .download-block {
-  .container();
   background-color: #1d2631;
   color: #fff;
+
+  @media @tablet-widths {
+    background-color: transparent;
+  }
 }
 
 .download-block__wrapper {
-  padding: 28px 18px;
-}
+  .container();
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: stretch;
+  padding: 25px 20px;
+  height: 210px;
 
-.download-app__link {
-  color: #fff;
+  @media @tablet-widths {
+    height: 240px;
+  }
+
+  @media @desktop-widths {
+    height: 280px;
+  }
 }
 
 .download-block__icon {
   font-size: 0;
+}
+
+.download-block__icon-wrap {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  @media @tablet-widths {
+    width: 300px;
+  }
 }
 
 .download-block__icon-iOS {
@@ -32,4 +55,16 @@
   width: 44px;
   height: 41px;
   background: url("../img/logo-microsoft.svg") no-repeat;
+}
+
+.download-block__info {
+  margin: 0;
+  text-align: center;
+  font-weight: @font-weight-light;
+
+  @media @tablet-widths {
+    width: 300px;
+    font-size: @font-size;
+    line-height: 24px;
+  }
 }

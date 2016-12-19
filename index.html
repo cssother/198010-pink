@@ -8,54 +8,73 @@
 </head>
 <body class="body">
   <header class="header">
-    <div class="header__bg-top">
-      <div class="header__wrapper">
-        <div class="main-logo">
-          <a href="" class="main-logo__link">
-            <img class="main-logo__icon" src="http://placehold.it/30x30">
-          </a>
+    <div class="header-top">
+      <div class="header-top__common-wrap">
+        <div class="header-top__wrapper">
+          <div class="main-logo">
+            <a href="" class="main-logo__link">
+              <img class="main-logo__icon" src="img/logo-pink-white-mobile.svg" width="75" height="25">
+            </a>
+          </div>
+          <button type="button" class="header__button"></button>
         </div>
-        <button type="button" class="header__button"></button>
+        <nav class="main-nav main-nav--closed">
+          <div class="main-nav__wrapper">
+            <ul class="main-nav__list">
+              <li class="main-nav__item">
+                <a class="main-nav__link  main-nav__link--active">Главная</a>
+              </li>
+              <li class="main-nav__item">
+                <a href="photo.html" class="main-nav__link">Фотографии</a>
+              </li>
+              <li class="main-nav__item">
+                <a href="form.html" class="main-nav__link">Конкурс</a>
+              </li>
+              <li class="main-nav__item">
+                <a href="#" class="main-nav__link">HTML Academy</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
       </div>
     </div>
-    <nav class="main-nav">
-      <ul class="main-nav__list">
-        <li class="main-nav__item">
-        <a class="main-nav__link">Гланая</a>
-        </li>
-        <li class="main-nav__item">
-          <a href="photo.html" class="main-nav__link">Фотографии</a>
-        </li>
-        <li class="main-nav__item">
-          <a href="form.html" class="main-nav__link">Конкурс</a>
-        </li>
-        <li class="main-nav__item">
-          <a href="#" class="main-nav__link">HTML Academy</a>
-        </li>
-      </ul>
-    </nav>
-    <div class="header__intro">
-      <img class="header__intro-img" src="http://placehold.it/150x200">
+    <div class="header-intro  header-intro--bg">
+      <div class="header-intro__wrapper">
+        <div class="header-intro__text  header-intro__text--visibility">Взгляните на жизнь иначе!</div>
+      </div>
+      <div class="download-block">
+        <div class="download-block__wrapper">
+          <div class="download-app">
+            <a href="#" class="download-app__link">Скачать приложение</a>
+          </div>
+          <div class="download-block__icon-wrap">
+            <div class="download-block__icon download-block__icon-iOS">
+              <a class="download-block__icon-link" href="#">IOS
+                <img src="img/#">
+              </a>
+            </div>
+            <div class="download-block__icon download-block__icon-android">
+              <a class="download-block__icon-link" href="#">Android
+                <img src="img/#">
+              </a>
+            </div>
+            <div class="download-block__icon download-block__icon-windows">
+              <a class="download-block__icon-link" href="#">Windows
+                <img src="img/#">
+              </a>
+            </div>
+          </div>
+          <p class="download-block__info">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+        </div>
+      </div>
     </div>
   </header>
-  <div class="download-block">
-    <div class="download-block__wrapper">
-      <div class="download-app">
-        <a href="#" class="download-app__link">Скачать приложение</a>
-      </div>
-      <div class="download-block__icon-wrap">
-        <div class="download-block__icon download-block__icon-iOS">IOS</div>
-        <div class="download-block__icon download-block__icon-android">Android</div>
-        <div class="download-block__icon download-block__icon-windows">Windows</div>
-      </div>
-      <p class="download-block__info">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
-    </div>
-  </div>
+
   <main class="main">
     <div class="main-intro">
       <div class="main-intro__wrapper">
         <p class="main-intro__text">Устали от серости мегаполиса?</p>
-        <p class="main-intro__text">Нам есть, что вам предложить!</p>
+        <p class="main-intro__text  main-intro__text--narrow-block">Нам есть, что вам предложить!</p>
       </div>
     </div>
     <div class="feature">
@@ -74,44 +93,95 @@
             <p class="feature__text">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
           </li>
         </ul>
-        <img src="http://placehold.it/150x300" alt="" class="description__img">
+        <div class="feature__img">
+          <img src="http://placehold.it/150x300" alt="" class="description__img ">
+        </div>
+      </div>
+    </div>
+    <div class="study">
+      <div class="study__wrapper">
+        <div class="study__content">
+          <h2 class="study__title">Эффект на 24 часа!</h2>
+          <p class="study__text">Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!
+          </p>
+          <a class="study__link" href="#">Узнать больше об исследовании</a>
+        </div>
       </div>
     </div>
     <blockquote class="comment">
       <div class="comment__wrapper">
         <cite class="comment__user-name">Николай Петров</cite>
-        <p class="comment__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+        <div class="comment__user-data  comment__user-data--visibility">25 лет, водитель трамвая</div>
+        <div class="comment__info">
+          <div class="arrow">
+            <a href="#" class="arrow__link  arrow__link--rev">предыдущий отзыв</a>
+          </div>
+          <p class="comment__text"><span>«</span>Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!<span>»</span></p>
+          <div class="arrow">
+            <a href="#" class="arrow__link  arrow__link--next">следующий отзыв</a>
+          </div>
+        </div>
+        <div class="toggle toggle__comment  toggle__comment--visibility">
+          <div class="toggle__wrapper">
+            <input class="toggle__input" id="comment-1" type="radio" name="comment">
+            <label class="toggle__item" for="comment-1"></label>
+            <input class="toggle__input" id="comment-2"  type="radio" name="comment" checked>
+            <label class="toggle__item" for="comment-2"></label>
+            <input class="toggle__input" id="comment-3" type="radio" name="comment">
+            <label class="toggle__item" for="comment-3"></label>
+          </div>
+        </div>
       </div>
     </blockquote>
     <div class="price">
-      <input class="toggle-btn" type="radio" id="price__btn-1" name="toggle">
-      <input class="toggle-btn" type="radio" id="price__btn-2" name="toggle" checked>
-      <input class="toggle-btn" type="radio" id="price__btn-3" name="toggle">
-      <table calss="table">
-        <tr class="table__header">
-          <td class="table__header-field"><span class="table__header-name">мини</span><br/><span class="table__header-cost">2,99 USD</span></td>
-          <td class="table__header-field"><span class="table__header-name">стандарт</span><br/><span class="table__header-cost">3,99 USD</span></td>
-          <td class="table__header-field"><span class="table__header-name">премиум</span><br/><span class="table__header-cost">4,99 USD</span></td>
-        </tr>
-        <tr class="table__item">
-          <td class="table__item-name">Розовый фильтр</td>
-          <td class="table__item-name">Розовый фильтр</td>
-          <td class="table__item-name">Розовый фильтр</td>
-        </tr>
-        <tr class="table__item">
-          <td class="table__item-name">Смайлики</td>
-          <td class="table__item-name">Смайлики</td>
-          <td class="table__item-name">Смайлики</td>
-        </tr>
-        <tr class="table__item">
-          <td class="table__item-name">Комментарии</td>
-          <td class="table__item-name">Комментарии</td>
-          <td class="table__item-name">Комментарии</td>
-        </tr>
-      </table>
+      <div class="price__wrapper">
+        <table class="table">
+          <tr class="table__header">
+            <td class="table__header-field  table__header-field--visibility"></td>
+            <td class="table__header-field">
+              <span class="table__header-name">база</span><br/>
+              <span class="table__header-cost">1,99 USD</span>
+            </td>
+            <td class="table__header-field">
+              <span class="table__header-name">стандарт</span><br/>
+              <span class="table__header-cost">3,99 USD</span>
+            </td>
+            <td class="table__header-field">
+              <span class="table__header-name">анлим</span><br/>
+              <span class="table__header-cost">9,99 USD</span>
+            </td>
+          </tr>
+          <tr class="table__item">
+            <td class="table__item-title">Розовый фильтр</td>
+            <td class="table__item-name">Розовый фильтр</td>
+            <td class="table__item-name">Розовый фильтр</td>
+            <td class="table__item-name">Розовый фильтр</td>
+          </tr>
+          <tr class="table__item">
+            <td class="table__item-title">Смайлики</td>
+            <td class="table__item-name  table__item-name--missing">Смайлики</td>
+            <td class="table__item-name">Смайлики</td>
+            <td class="table__item-name">Смайлики</td>
+          </tr>
+          <tr class="table__item">
+            <td class="table__item-title">Комментарии</td>
+            <td class="table__item-name  table__item-name--missing">Комментарии</td>
+            <td class="table__item-name  table__item-name--missing">Комментарии</td>
+            <td class="table__item-name">Комментарии</td>
+          </tr>
+        </table>
+        <div class="toggle price__toggle">
+          <div class="toggle__wrapper">
+            <input class="toggle__input" id="price-1" type="radio" name="price">
+            <label class="toggle__item" for="price-1"></label>
+            <input class="toggle__input" id="price-2"  type="radio" name="price" checked>
+            <label class="toggle__item" for="price-2"></label>
+            <input class="toggle__input" id="price-3" type="radio" name="price">
+            <label class="toggle__item" for="price-3"></label>
+          </div>
+        </div>
+      </div>
     </div>
-  </main>
-  <footer calss="footer">
     <div class="contacts">
       <div class="contacts__wrapper">
         <div class="contacts__heading">
@@ -138,8 +208,41 @@
       </div>
     </div>
     <div class="map">
-      <img class="map__img" src="http://placehold.it/300x300">
+      <div class="map__wrapper">
+        <img class="map__img" src="http://placehold.it/300x300">
+      </div>
+    </div>
+  </main>
+  <footer class="footer  footer--visibility">
+    <div class="footer__wrapper">
+      <div class="footer__logo">
+        <div class="logo-full">
+          <a href="index.html" class="logo-full__link">
+            <img class="logo-full__icon" src="http://placehold.it/30x30">
+          </a>
+        </div>
+      </div>
+      <div class="social">
+        <ul class="social__list">
+          <li cass="social__item">
+            <a class="social__link" href="#">twitter</a>
+          </li>
+          <li cass="social__item">
+            <a class="social__link" href="#">facebook</a>
+          </li>
+          <li cass="social__item">
+            <a class="social__link" href="#">youtube</a>
+          </li>
+        </ul>
+      </div>
+      <div class="copyright">
+        <span class="copyright__text">Разработано</span>
+        <a href="#" class="copyright__link">
+          <img class="copyright__icon" src="http://placehold.it/20x25" alt="">
+        </a>
+      </div>
     </div>
   </footer>
+  <script src="js/script.js"></script>
 </body>
 </html>

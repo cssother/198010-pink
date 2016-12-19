@@ -1,0 +1,131 @@
+.table {
+  margin-bottom: 30px;
+  background-color: #e5e5e5;
+
+  @media @tablet-widths {
+    width: 620px;
+    margin-bottom: 65px;
+  }
+
+  @media @desktop-widths {
+    width: 940px;
+    margin-bottom: 95px;
+  }
+}
+
+.table__header-field {
+  min-width: 280px;
+  padding: 15px 0;
+  text-align: center;
+  color: #fff;
+  background-color: #283645;
+
+  &--visibility {
+    display: none;
+
+    @media @tablet-widths {
+      display: table-cell;
+      background-color: @grey-color;
+    }
+  }
+
+  @media @tablet-widths {
+    min-width: 0;
+
+  }
+}
+
+.table__item-title {
+  display: none;
+
+  @media @tablet-widths {
+    display: table-cell;
+  }
+}
+
+.table__header-name {
+  font-size: @font-size;
+  line-height: 30px;
+  font-weight: @font-weight-bold;
+  text-transform: uppercase;
+
+  @media @tablet-widths {
+    font-size: 16px;
+  }
+
+  @media @desktop-widths {
+    font-size: @font-size;
+  }
+}
+
+.table__header-cost {
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: @font-weight-light;
+
+  @media @tablet-widths {
+    font-size: @font-size;
+  }
+
+  @media @desktop-widths {
+    font-size: 24px;
+  }
+}
+
+.table__item-name {
+  position: relative;
+  background-color: #fff;
+  text-transform: uppercase;
+  line-height: 30px;
+  padding: 20px 55px 20px 20px;
+
+  @media @tablet-widths {
+    padding: 20px;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    margin-top: -12px;
+    width: 30px;
+    height: 25px;
+    background: url("http://placehold.it/30x25") 50% 50% no-repeat;
+
+    @media @tablet-widths {
+      right: 50%;
+      margin-right: -15px;
+    }
+  }
+
+  &--missing{
+
+    &::before {
+      content: "";
+      position: absolute;
+      right: 20px;
+      top: 50%;
+      margin-top: -12px;
+      width: 30px;
+      height: 25px;
+      background: url("http://placehold.it/30x25") 50% 50% no-repeat;
+
+      @media @tablet-widths {
+        right: 50%;
+        margin-right: -15px;
+      }
+    }
+  }
+
+  @media @tablet-widths {
+    width: 25%;
+    font-size: 0;
+  }
+}
+
+.table__item-title {
+  background-color: #fff;
+  line-height: 30px;
+  padding: 20px;
+}

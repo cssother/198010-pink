@@ -8,159 +8,215 @@
 </head>
 <body class="body">
   <header class="header">
-    <div class="header__bg-top">
-      <div class="header__wrapper">
-        <div class="main-logo">
-          <a href="" class="main-logo__link">
-            <img class="main-logo__icon" src="http://placehold.it/30x30">
-          </a>
+    <div class="header-top">
+      <div class="header-top__common-wrap">
+        <div class="header-top__wrapper">
+          <div class="main-logo">
+            <a href="" class="main-logo__link">
+              <img class="main-logo__icon" src="img/logo-pink-white-mobile.svg" width="75" height="25">
+            </a>
+          </div>
+          <button type="button" class="header__button"></button>
         </div>
-        <button type="button" class="header__button"></button>
+        <nav class="main-nav main-nav--closed">
+          <div class="main-nav__wrapper">
+            <ul class="main-nav__list">
+              <li class="main-nav__item">
+                <a href="index.html" class="main-nav__link">Главная</a>
+              </li>
+              <li class="main-nav__item">
+                <a href="photo.html" class="main-nav__link  main-nav__link--active">Фотографии</a>
+              </li>
+              <li class="main-nav__item">
+                <a href="form.html" class="main-nav__link">Конкурс</a>
+              </li>
+              <li class="main-nav__item">
+                <a href="#" class="main-nav__link">HTML Academy</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
       </div>
     </div>
-    <nav class="main-nav">
-      <ul class="main-nav__list">
-        <li class="main-nav__item">
-          <a href="index.html" class="main-nav__link">Гланая</a>
-        </li>
-        <li class="main-nav__item">
-          <a class="main-nav__link">Фотографии</a>
-        </li>
-        <li class="main-nav__item">
-          <a href="form.html" class="main-nav__link">Конкурс</a>
-        </li>
-        <li class="main-nav__item">
-          <a href="#" class="main-nav__link">HTML Academy</a>
-        </li>
-      </ul>
-    </nav>
-    <div class="header__intro">
-      <div class="header__intro-wrap">
-        <div class="header__intro-text">Фотографии пользователей</div>
+    <div class="header-intro  header-intro--photo">
+      <div class="header-intro__wrapper">
+        <div class="header-intro__text  header-intro__text--resize-photo">Фотографии пользователей</div>
       </div>
     </div>
   </header>
   <main class="main">
     <div class="topic-name">
       <div class="topic-name__wrapper">
-        <p class="topic-name__text">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
+        <p class="topic-name__text  topic-name__text--resize-photo">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
       </div>
     </div>
     <div class="posts">
       <article class="post  post--best">
-        <figure class="post__content ">
-          <img class="post__img post__img--best" src="http://placehold.it/320x150" alt="">
+        <figure class="post__content  post__content--best">
+          <img class="post__img post__img--best" src="http://placehold.it/600x137" alt="">
         </figure>
-        <blockquote class="post__description">
-          <cite class="post__user-info"><span class="post__user-name">Анна </span><time datetime="2016-11-28T17:58:00">(5 минут назад)</time></cite>
-          <p class="post__text">Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
-          <a class="post__btn" href="#"><span>нравится: 215</span></a>
-        </blockquote>
+        <div class="post__description-wrap">
+          <blockquote class="post__description  post__description--best">
+            <cite class="post__user-info  post__user-info--best"><span class="post__user-name">Анна </span><time datetime="2016-11-28T17:58:00">(5 минут назад)</time></cite>
+            <p class="post__text  post__text--best">Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
+            <a class="post__btn  post__btn--best" href="#"><span>нравится: 215</span></a>
+          </blockquote>
+        </div>
       </article>
-      <article class="post">
-        <figure class="post__content">
-          <img class="post__img" src="http://placehold.it/280x150" alt="">
-        </figure>
-        <blockquote class="post__description">
-          <cite class="post__user-info"><span class="post__user-name">Левон </span><time datetime="2016-11-28T17:58:00">(5 часов назад)</time></cite>
-          <p class="post__text">Вчера он на луну летал, сегодня в руки к нам попал.</p>
-          <a class="post__btn" href="#"><span>нравится: 356</span></a>
-        </blockquote>
-      </article>
-      <article class="post">
-        <figure class="post__content">
-          <img class="post__img" src="http://placehold.it/280x150" alt="">
-        </figure>
-        <blockquote class="post__description">
-          <cite class="post__user-info"><span class="post__user-name">Антон </span><time datetime="2016-11-28T17:58:00">(12 часов назад)</time></cite>
-          <p class="post__text">Соседи будут рады!</p>
-          <a class="post__btn" href="#"><span>нравится: 666</span></a>
-        </blockquote>
-      </article>
-      <article class="post">
-        <figure class="post__content">
-          <img class="post__img" src="http://placehold.it/280x150" alt="">
-        </figure>
-        <blockquote class="post__description">
-          <cite class="post__user-info"><span class="post__user-name">Борис </span><time datetime="2016-11-28T17:58:00">(20 часов назад)</time></cite>
-          <p class="post__text">Здесь могла быть ваша цитата о высоком и вечном.</p>
-          <a class="post__btn" href="#"><span>нравится: 215</span></a>
-        </blockquote>
-      </article>
-      <article class="post">
-        <figure class="post__content">
-          <img class="post__img" src="http://placehold.it/280x150" alt="">
-        </figure>
-        <blockquote class="post__description">
-          <cite class="post__user-info"><span class="post__user-name">Сергей </span><time datetime="2016-11-28T17:58:00">(25 часов назад)</time></cite>
-          <p class="post__text">Самая кубанская в мире!</p>
-          <a class="post__btn" href="#"><span>нравится: 4</span></a>
-        </blockquote>
-      </article>
-      <article class="post">
-        <figure class="post__content">
-          <img class="post__img" src="http://placehold.it/280x150" alt="">
-        </figure>
-        <blockquote class="post__description">
-          <cite class="post__user-info"><span class="post__user-name">Максим </span><time datetime="2016-11-28T17:58:00">(40 часов назад)</time></cite>
-          <p class="post__text">Где снег-то?</p>
-          <a class="post__btn" href="#"><span>нравится: 150</span></a>
-        </blockquote>
-      </article>
-      <article class="post">
-        <figure class="post__content">
-          <img class="post__img" src="http://placehold.it/280x150" alt="">
-        </figure>
-        <blockquote class="post__description">
-          <cite class="post__user-info"><span class="post__user-name">Надежда </span><time datetime="2016-11-28T17:58:00">(45 часов назад)</time></cite>
-          <p class="post__text">Всем GM и взаимные лайки!</p>
-          <a class="post__btn" href="#"><span>нравится: 2560</span></a>
-        </blockquote>
-      </article>
+
+      <div class="posts__group-wrap">
+        <article class="post">
+          <div class="post__wrapper">
+            <figure class="post__content">
+              <img class="post__img" src="http://placehold.it/280x150" alt="">
+            </figure>
+            <blockquote class="post__description">
+              <cite class="post__user-info"><span class="post__user-name">Левон </span><time datetime="2016-11-28T17:58:00">(5 часов назад)</time></cite>
+              <p class="post__text">Вчера он на луну летал, сегодня в руки к нам попал.</p>
+              <a class="post__btn" href="#"><span>нравится: 356</span></a>
+            </blockquote>
+          </div>
+        </article>
+
+        <article class="post">
+          <div class="post__wrapper">
+            <figure class="post__content">
+              <img class="post__img" src="http://placehold.it/280x150" alt="">
+            </figure>
+            <blockquote class="post__description">
+              <cite class="post__user-info"><span class="post__user-name">Антон </span><time datetime="2016-11-28T17:58:00">(12 часов назад)</time></cite>
+              <p class="post__text">Соседи будут рады!</p>
+              <a class="post__btn" href="#"><span>нравится: 666</span></a>
+            </blockquote>
+          </div>
+        </article>
+
+        <article class="post">
+          <div class="post__wrapper">
+            <figure class="post__content">
+              <img class="post__img" src="http://placehold.it/280x150" alt="">
+            </figure>
+            <blockquote class="post__description">
+              <cite class="post__user-info"><span class="post__user-name">Борис </span><time datetime="2016-11-28T17:58:00">(20 часов назад)</time></cite>
+              <p class="post__text">Здесь могла быть ваша цитата о высоком и вечном.</p>
+              <a class="post__btn" href="#"><span>нравится: 215</span></a>
+            </blockquote>
+          </div>
+        </article>
+
+        <article class="post">
+          <div class="post__wrapper">
+            <figure class="post__content">
+              <img class="post__img" src="http://placehold.it/280x150" alt="">
+            </figure>
+            <blockquote class="post__description">
+              <cite class="post__user-info"><span class="post__user-name">Сергей </span><time datetime="2016-11-28T17:58:00">(25 часов назад)</time></cite>
+              <p class="post__text">Самая кубанская в мире!</p>
+              <a class="post__btn" href="#"><span>нравится: 4</span></a>
+            </blockquote>
+          </div>
+        </article>
+
+        <article class="post">
+          <div class="post__wrapper">
+            <figure class="post__content">
+              <img class="post__img" src="http://placehold.it/280x150" alt="">
+            </figure>
+            <blockquote class="post__description">
+              <cite class="post__user-info"><span class="post__user-name">Максим </span><time datetime="2016-11-28T17:58:00">(40 часов назад)</time></cite>
+              <p class="post__text">Где снег-то?</p>
+              <a class="post__btn" href="#"><span>нравится: 150</span></a>
+            </blockquote>
+          </div>
+        </article>
+
+        <article class="post">
+          <div class="post__wrapper">
+            <figure class="post__content">
+              <img class="post__img" src="http://placehold.it/280x150" alt="">
+            </figure>
+            <blockquote class="post__description">
+              <cite class="post__user-info"><span class="post__user-name">Надежда </span><time datetime="2016-11-28T17:58:00">(45 часов назад)</time></cite>
+              <p class="post__text">Всем GM и взаимные лайки!</p>
+              <a class="post__btn" href="#"><span>нравится: 2560</span></a>
+            </blockquote>
+          </div>
+        </article>
+      </div>
     </div>
     <div class="topic-name">
-      <p class="topic-name__text">Затмите их всех! Выкладывайте все, что накопилось в телефоне!</p>
+      <div class="topic-name__wrapper">
+        <p class="topic-name__text  topic-name__text--belief">Затмите их всех!<br/> Выкладывайте все, что накопилось в телефоне!</p>
+      </div>
     </div>
     <div class="photo-editor">
       <div class="photo-editor__wrapper">
         <div class="photo-editor__user-photo">
+          <div class="photo-editor__user-photo-wrap">
           <img class="photo-editor__img" src="http://placehold.it/280x400" alt="">
-        </div>
-        <div class="photo-editor__correct-block">
-          <div class="photo-editor__tools">
-            <button class="photo-editor__btn-tool" type="button">Обрезать</button>
-            <button class="photo-editor__btn-tool" type="button">Изменить цвет</button>
-            <button class="photo-editor__btn-tool" type="button">Изменить яркость</button>
-          </div>
-          <div class="photo-editor__bar">
-            <div class="photo-editor__range"></div>
           </div>
         </div>
+        <div class="photo-editor__tools">
+          <div class="photo-editor__tools-wrap">
+            <div class="photo-editor__block-tool">
+              <button class="photo-editor__icon-tool" type="button">Обрезать</button>
+              <div class="range-controls">
+                <div class="range-controls__scale"></div>
+                <div class="range-controls__toggle  range-controls__toggle--cutting"></div>
+              </div>
+            </div>
+            <div class="photo-editor__block-tool">
+              <button class="photo-editor__icon-tool" type="button">Изменить цвет</button>
+              <div class="range-controls">
+                <div class="range-controls__scale"></div>
+                <div class="range-controls__toggle  range-controls__toggle--color"></div>
+              </div>
+            </div>
+            <div class="photo-editor__block-tool">
+              <button class="photo-editor__icon-tool" type="button">Изменить яркость</button>
+              <div class="range-controls">
+                <div class="range-controls__scale"></div>
+                <div class="range-controls__toggle  range-controls__toggle--bright"></div>
+              </div>
+            </div>
+            <div class="range-controls  range-controls--common">
+              <div class="range-controls__scale"></div>
+              <div class="range-controls__toggle"></div>
+            </div>
+          </div>
+        </div>
+        <hr class="photo-editor__delimiter" />
         <div class="photo-editor__buttons">
-          <button class="btn photo-editor__btn  photo-editor__btn--submit" type="button">Запостить</button>
-          <button class="btn photo-editor__btn  photo-editor__btn--remove" type="button">Отмена</button>
+          <div class="photo-editor__buttons-wrap">
+            <button class="btn photo-editor__btn  photo-editor__btn--submit" type="button">Запостить</button>
+            <button class="btn photo-editor__btn  photo-editor__btn--remove" type="button">Отмена</button>
+          </div>
         </div>
       </div>
     </div>
   </main>
   <footer class="footer">
-    <div class="footer__logo">
-      <div class="logo-full">
-        <a href="index.html" class="logo-full__link">
-          <img class="logo-full__icon" src="http://placehold.it/30x30">
-        </a>
+    <div class="footer__wrapper  footer__wrapper--direction">
+      <div class="footer__logo">
+        <div class="logo-full">
+          <a href="index.html" class="logo-full__link">
+            <img class="logo-full__icon" src="http://placehold.it/30x30">
+          </a>
+        </div>
       </div>
-    </div>
-    <div class="footer__social">
       <div class="social">
         <ul class="social__list">
-          <li cass="social__item"><a class="social__link" href="#">twitter</a></li>
-          <li cass="social__item"><a class="social__link" href="#">facebook</a></li>
-          <li cass="social__item"><a class="social__link" href="#">youtube</a></li>
+          <li cass="social__item">
+            <a class="social__link" href="#">twitter</a>
+          </li>
+          <li cass="social__item">
+            <a class="social__link" href="#">facebook</a>
+          </li>
+          <li cass="social__item">
+            <a class="social__link" href="#">youtube</a>
+          </li>
         </ul>
       </div>
-    </div>
-    <div class="footer__copyright">
       <div class="copyright">
         <span class="copyright__text">Разработано</span>
         <a href="#" class="copyright__link">
@@ -169,5 +225,6 @@
       </div>
     </div>
   </footer>
+  <script src="js/script.js"></script>
 </body>
 </html>

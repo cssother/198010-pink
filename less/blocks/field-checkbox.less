@@ -1,23 +1,87 @@
 .field-checkbox {
   background-color: @grey-color;
-  padding: 40px 20px;
+  margin-bottom: 35px;
+
+  @media @tablet-widths {
+    order: 4;
+    background-color: #fff;
+    margin-bottom: 50px;
+  }
+}
+
+.field-checkbox__wrapper {
+  .container();
+  padding-top: 40px;
+  padding-bottom: 45px;
+
+  @media @desktop-widths {
+    margin: 0;
+    padding: 0;
+  }
+}
+
+.field-checkbox__fieldset {
+  padding: 0;
+  margin: 0;
+  border: 2px solid #e5e5e5;
+
+  @media @only-mobile-widths {
+    border: none;
+  }
+
+  @media @tablet-widths {
+    padding: 60px;
+  }
 }
 
 .field-checkbox__title {
   margin-bottom: 35px;
+  margin-left: 25px;
+  margin-right: 25px;
   line-heigth: 18px;
   color: @accented-text-color;
   text-transform: uppercase;
   text-align: center;
+
+  @media @tablet-widths {
+    margin: 0;
+    padding: 0 20px;
+  }
 }
 
 .field-checkbox__item {
   display: block;
-  margin-left: 65px;
   margin-bottom: 45px;
   font-size: 24px;
 }
 
 .field-checkbox__item:last-child {
   margin-bottom: 0;
+}
+
+.field-checkbox__input {
+  display: none;
+}
+
+.field-checkbox__text {
+  position: relative;
+  padding-left: 70px;
+  font-size: @font-size;
+  cursor: pointer;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    margin-top: -19px;
+    width: 35px;
+    height: 35px;
+    background-color: #fff;
+    border: 2px solid #e5e5e5;
+  }
+}
+
+.field-checkbox__input:checked + .field-checkbox__text::before {
+  background: #fff url("http://placehold.it/10x10") 50% 50% no-repeat;
 }

@@ -1,0 +1,40 @@
+.toggle__comment {
+
+  @media @tablet-widths {
+    order: 4;
+  }
+
+  &--visibility {
+
+    @media @desktop-widths {
+      display: none;
+    }
+  }
+}
+
+.toggle__wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 40px;
+}
+
+.toggle__item {
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  margin: 0 9px;
+  border-radius: 50%;
+  background-color: #bec2c7;
+  cursor: pointer;
+}
+
+.toggle__input {
+  display: none;
+
+  &:checked + .toggle__item {
+    background-color: transparent;
+    border: 3px solid @text-color;
+
+  }
+}

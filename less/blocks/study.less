@@ -1,0 +1,54 @@
+.study {
+  display: none;
+
+  @media @tablet-widths {
+    display: block;
+    justify-content: flex-end;
+  }
+
+  @media @desktop-widths {
+    background: @grey-color;
+  }
+}
+
+.study__wrapper {
+  .container();
+  display: flex;
+  justify-content: flex-end;
+}
+
+.study__content {
+  width: 50%;
+  margin: 100px 0;
+
+  @media @desktop-widths {
+    width: 570px;
+  }
+}
+
+.study__title {
+  color: #000;
+  font-size: 30px;
+  line-height: 36px;
+
+  @media @desktop-widths {
+    line-height: 30px;
+  }
+}
+
+.study__text {
+  line-height: 24px;
+
+  @media @desktop-widths {
+    font-size: @font-size;
+  }
+}
+
+.study__link {
+  color: @accented-text-color;
+  line-height: 30px;
+
+  @media @desktop-widths {
+    font-size: @font-size;
+  }
+}

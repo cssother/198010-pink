@@ -1,21 +1,81 @@
 .post {
-  min-width: 280px;
-  margin: 20px;
+  margin-bottom: 20px;
+
+  @media @only-tablet-widths {
+    margin-bottom: 0;
+
+    &:nth-child(n+3) {
+      margin-top: 20px;
+    }
+
+    &--best {
+      margin-bottom: 50px;
+    }
+  }
+
+  @media @desktop-widths {
+    margin-bottom: 0;
+
+    &:nth-child(n+4) {
+      margin-top: 54px;
+    }
+
+    &--best {
+      margin-bottom: 50px;
+    }
+  }
+}
+
+.post__wrapper {
   background-color: @grey-color;
+
+  @media @tablet-widths {
+    width: 300px;
+  }
 }
 
 .post__content {
   margin: 0;
   text-align: center;
+  background-color: @grey-color;
+
+  &--best {
+    width: 100%;
+    height: 137px;
+  }
+
+  @media @tablet-widths {
+    height: 300px;
+
+    &--best {
+      height: 510px;
+    }
+  }
 }
 
-.post__img--best {
-  margin-left: -20px;
+.post__description-wrap {
+  .container();
 }
 
 .post__description {
-  margin: 0 20px;
+  margin: 0;
+  padding: 20px;
   line-height: 24px;
+  background-color: @grey-color;
+
+  @media @tablet-widths {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 105px;
+    padding: 25px;
+
+    &--best {
+      flex-direction: row;
+      flex-wrap: wrap;
+      height: auto;
+    }
+  }
 }
 
 .post__user-info {
@@ -23,6 +83,13 @@
   font-style: normal;
   font-weight: @font-weight-light;
   text-transform: uppercase;
+
+  @media @tablet-widths {
+
+    &--best {
+      order: 1;
+    }
+  }
 }
 
 .post__user-name {
@@ -39,13 +106,54 @@
   margin: 0;
   margin-bottom: 10px;
   color: @text-color;
+
+  @media @tablet-widths {
+    margin-bottom: auto;
+
+    &--best {
+      order: 3;
+    }
+  }
 }
 
 .post__btn {
-  margin-left: 45px;
+  position: relative;
+  padding-left: 45px;
   font-size: 12px;
   line-height: 24px;
   color: @accented-text-color;
   text-decoration: none;
   text-transform: uppercase;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    left: 0;
+    top: 50%;
+    margin-top: -8px;
+    background: #fff url("http://placehold.it/15x15") center center no-repeat;
+  }
+
+  @media @tablet-widths {
+    padding-left: 0;
+    width: auto;
+
+    &::before {
+      left: 235px;
+    }
+
+    &--best {
+      order: 2;
+      padding-left: 0;
+      padding-right: 30px;
+
+      &::before {
+        left: 104px;
+        top: 50%;
+        margin-top: -8px;
+      }
+    }
+  }
 }

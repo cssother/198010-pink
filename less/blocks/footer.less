@@ -1,6 +1,36 @@
 .footer {
+
+  &--visibility {
+    display: none;
+
+    @media @tablet-widths {
+      display: block;
+    }
+  }
+}
+
+.footer__wrapper {
   .container();
-  padding: 40px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &--direction {
+
+    @media @only-mobile-widths {
+      flex-direction: column;
+      min-height: 220px;
+      padding: 35px 0;
+    }
+
+    @media @tablet-widths {
+      padding: 35px 0;
+    }
+
+    @media @desktop-widths {
+      padding: 95px 0;
+    }
+  }
 }
 
 .footer__logo {

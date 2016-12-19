@@ -1,6 +1,67 @@
-.field-text__wrapper {
-  padding: 30px 20px;
+.field-text {
+  margin-bottom: 30px;
+
+  @media @tablet-widths {
+
+    &--position-1 {
+      order: 1;
+    }
+
+    &--position-2 {
+      order: 3;
+    }
+
+    &--position-3 {
+      order: 5;
+    }
+  }
+
+  @media @desktop-widths {
+
+    &--position-1 {
+      width: 435px;
+    }
+
+    &--position-2 {
+      width: 100%;
+    }
+
+    &--position-3 {
+      width: 100%;
+    }
+  }
 }
+
+.field-text__wrapper {
+  .container();
+
+  @media @desktop-widths {
+    margin: 0;
+    padding: 0;
+    width: auto;
+  }
+}
+
+.field-text__fieldset {
+  padding: 0;
+  margin: 0;
+  border: 2px solid #e5e5e5;
+
+  @media @only-mobile-widths {
+    border: none;
+  }
+
+  @media @tablet-widths {
+    padding: 50px 60px 0 60px;
+  }
+}
+
+// .field-text__input-wrap {
+
+//   @media @desktop-widths {
+//     display: flex;
+//   }
+// }
 
 .field-text__title {
   margin-bottom: 15px;
@@ -8,22 +69,147 @@
   text-align: center;
   line-height: @line-height;
   text-transform: uppercase;
+
+  @media @tablet-widths {
+    padding: 0 20px;
+    margin: 0;
+  }
 }
 
 .field-text__title--visibility {
   display: none;
+
+  @media @tablet-widths {
+    display: block;
+  }
+}
+
+.field-text__input-wrap {
+
+  @media @desktop-widths {
+
+    &--order {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
 }
 
 .field-text__item {
+  display: flex;
+  flex-direction: column-reverse;
   line-height: 30px;
   color: @accented-text-color;
   text-transform: uppercase;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  @media @tablet-widths {
+    flex-direction: row-reverse;
+    align-items: center;
+    margin-bottom: 50px;
+
+    &--order {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      margin-bottom: 30px;
+
+      &:last-child {
+        margin-bottom: 30px;
+      }
+    }
+  }
+
+  @media @desktop-widths {
+    width: 435px;
+
+    &--order {
+      width: 375px;
+      margin-bottom: 20px;
+
+      &:last-child {
+        margin-bottom: 20px;
+      }
+    }
+  }
+}
+
+.field-text__item--order .field-text__text {
+
+  @media @tablet-widths {
+    margin-top: 10px;
+    margin-left: 20px;
+  }
+}
+
+.field-text__input-with-icon {
+  display: flex;
+  width: 100%;
 }
 
 .field-text__input {
-  min-width: 240px;
-  padding: 5px 20px;
+  min-width: 238px;
+  margin-bottom: 25px;
+  padding: 15px 20px;
   line-height: 30px;
   font-size: @font-size;
   color: @text-color;
+  border-color: #e5e5e5;
+  outline: none;
+
+  @media @tablet-widths {
+    flex-grow: 1;
+    align-self: stretch;
+    margin: 0;
+  }
+}
+
+.field-text__input-icon {
+  display: none;
+
+  @media @tablet-widths {
+    display: block;
+    width: 65px;
+    height: 65px;
+    background: #e5e5e5 url("http://placehold.it/30x30") 50% 50% no-repeat;
+  }
+}
+
+.field-text__text {
+  margin-bottom: 10px;
+  margin-left: 20px;
+
+  @media @tablet-widths {
+    margin: 0;
+    margin-right: 20px;
+  }
+}
+
+.field-text__visible {
+
+  @media @tablet-widths {
+    display: none;
+  }
+}
+
+.field-text__textarea {
+  width: 100%;
+  padding: 20px;
+  margin: 0;
+  box-sizing: border-box;
+  font-size: @font-size;
+  border: 2px solid #e5e5e5;
+
+  @media @tablet-widths {
+    width: 100%;
+    margin-bottom: 50px;
+  }
+
+  @media @desktop-widths {
+
+  }
 }
