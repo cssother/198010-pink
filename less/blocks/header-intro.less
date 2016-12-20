@@ -11,16 +11,22 @@
   &--bg {
 
     @media @tablet-widths {
-    background: url("../img/iphone-hand-mobile@1x.png") 0 0 no-repeat,
-                url("../img/bg-back-mobile@1x.jpg") 50% 50% no-repeat;
-    background-position: 10px 176px, center top;
-    background-size: auto, auto 489px;
-
-
+      background: url("../img/iphone-hand-tablet@1x.png") center center no-repeat,
+                url("../img/bg-back-tablet@1x.jpg") center center no-repeat;
       margin: auto 0;
-      padding-top: 200px;
-      padding-bottom: 100px;
-      background-size: auto auto, 100% 100%;
+      padding-top: 204px;
+      padding-bottom: 113px;
+      background-size: auto auto, 1200px 729px;
+      background-position: center bottom, center center;
+    }
+
+    @media @desktop-widths {
+      background: url("../img/iphone-hand-desktop@1xTEST.png") center center no-repeat,
+                url("../img/bg-back-desktop@1x.jpg") center center no-repeat;
+      margin: auto 0;
+      padding-top: 222px;
+      padding-bottom: 123px;
+      background-size: auto auto, cover;
       background-position: center bottom, center center;
     }
   }
@@ -69,10 +75,6 @@
   }
 }
 
-.header-intro__img {
-  align-self: flex-start;
-}
-
 .header-intro__text {
   color: #fff;
   font-size: 24px;
@@ -96,6 +98,7 @@
 
   @media @desktop-widths {
     font-size: 50px;
+    margin-bottom: 57px;
   }
 
   &--resize-form {

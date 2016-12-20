@@ -17,6 +17,7 @@
   height: 215px;
 
   @media @tablet-widths {
+    align-items: flex-start;
     height: 240px;
   }
 
@@ -70,12 +71,32 @@
 .download-block__icon-wrap {
   display: flex;
   justify-content: space-between;
-  align-items: flex-end;
-  width: 206px;
+  align-items: flex-start;
+  width: 203px;
 
   @media @tablet-widths {
-    width: 300px;
+    margin-left: 48px;
   }
+}
+
+.download-block__icon-link {
+  display: block;
+}
+
+.download-block__icon-apple {
+  margin-top: 7px;
+}
+
+.download-block__icon-android {
+  margin-top: 17px;
+
+  @media @only-tablet-widths {
+    opacity: 0.6;
+  }
+}
+
+.download-block__icon-microsoft {
+  margin-top: 19px;
 }
 
 .download-block__info {
