@@ -38,13 +38,15 @@
   }
 
   &--close {
-    width: 35px;
+    width: 30px;
 
     &::before {
       content: "";
       position: absolute;
-      width: 35px;
-      height: 4px;
+      top: 6px;
+      left: 4px;
+      width: 30px;
+      height: 5px;
       background-color: #fff;
       transform: rotate(45deg);
       box-shadow: none;
@@ -61,10 +63,10 @@
     &::after {
       content: "";
       position: absolute;
-      top: 10px;
-      left: 0;
-      width: 35px;
-      height: 4px;
+      top: 6px;
+      left: 4px;
+      width: 30px;
+      height: 5px;
       background-color: #fff;
       transform: rotate(-45deg);
       box-shadow: none;
@@ -77,6 +79,10 @@
     &:active::after {
       background-color: rgba(210, 40, 86, 0.3);
     }
+  }
+
+  @media @tablet-widths {
+    margin-top: 8px;
   }
 
   @media @desktop-widths {
