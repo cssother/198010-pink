@@ -12,9 +12,9 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  align-items: stretch;
-  padding: 25px 20px;
-  height: 210px;
+  align-items: center;
+  padding: 25px 20px 30px 20px;
+  height: 215px;
 
   @media @tablet-widths {
     height: 240px;
@@ -25,42 +25,64 @@
   }
 }
 
-.download-block__icon {
-  font-size: 0;
-}
-
-.download-block__icon-wrap {
+.download-block__button {
   display: flex;
-  justify-content: space-around;
-  align-items: center;
+  justify-content: center;
+  width: 280px;
+  margin-bottom: 5px;
 
   @media @tablet-widths {
     width: 300px;
   }
 }
 
-.download-block__icon-iOS {
-  width: 47px;
-  height: 60px;
-  background: url("../img/logo-apple.svg") no-repeat;
+.download-block__link {
+  padding: 15px 25px;
+  width: 280px;
+  border: 3px solid #fff;
+  border-radius: 50px;
+  font-size: @font-size;
+  font-weight: @font-weight-bold;
+  line-height: @line-height;
+  text-decoration: none;
+  text-align: center;
+  color: #fff;
+
+  &:hover {
+    background-color: #fff;
+    color: @accented-text-color;
+  }
+
+  &:active {
+    background-color: #fff;
+    color: rgba(210, 40, 86, 0.3);
+  }
+
+  @media @desktop-widths {
+    font-size: 21px;
+  }
 }
 
-.download-block__icon-android {
-  width: 43px;
-  height: 47px;
-  background: url("../img/logo-android.svg") no-repeat;
+.download-block__icon {
+  font-size: 0;
 }
 
-.download-block__icon-windows {
-  width: 44px;
-  height: 41px;
-  background: url("../img/logo-microsoft.svg") no-repeat;
+.download-block__icon-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  width: 206px;
+
+  @media @tablet-widths {
+    width: 300px;
+  }
 }
 
 .download-block__info {
   margin: 0;
   text-align: center;
   font-weight: @font-weight-light;
+  line-height: 24px;
 
   @media @tablet-widths {
     width: 300px;
