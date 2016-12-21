@@ -12,22 +12,34 @@
 
     @media @tablet-widths {
       background: url("../img/iphone-hand-tablet@1x.png") center center no-repeat,
-                url("../img/bg-back-tablet@1x.jpg") center center no-repeat;
+                  url("../img/bg-back-tablet@1x.jpg") center center no-repeat;
       margin: auto 0;
       padding-top: 204px;
       padding-bottom: 113px;
       background-size: auto auto, 1200px 729px;
       background-position: center bottom, center center;
+
+      @media @retina {
+        background: url("../img/iphone-hand-tablet@2x.png") center center no-repeat,
+                    url("../img/bg-back-tablet@2x.jpg") center center no-repeat;
+        background-size: 700px 545px, 1200px 729px;
+      }
     }
 
     @media @desktop-widths {
-      background: url("../img/iphone-hand-desktop@1xTEST.png") center center no-repeat,
-                url("../img/bg-back-desktop@1x.jpg") center center no-repeat;
+      background: url("../img/iphone-hand-desktop-work@1x.png") center center no-repeat,
+                  url("../img/bg-back-desktop@1x.jpg") center center no-repeat;
       margin: auto 0;
       padding-top: 222px;
       padding-bottom: 123px;
-      background-size: auto auto, cover;
+      background-size: auto auto, center center;
       background-position: center bottom, center center;
+
+      @media @retina {
+        background: url("../img/iphone-hand-desktop-work@2x.png") center center no-repeat,
+                    url("../img/bg-back-desktop@2x.jpg") center center no-repeat;
+        background-size: 940px 645px, 2560px 853px;
+      }
     }
   }
 
@@ -70,8 +82,13 @@
   justify-content: flex-end;
 
   @media @only-mobile-widths {
-  background: url("../img/iphone-hand-mobile@1x.png") left bottom no-repeat;
-  padding-top: 463px;
+    background: url("../img/iphone-hand-mobile@1x.png") left bottom no-repeat;
+    padding-top: 463px;
+
+    @media @retina {
+      background: url("../img/iphone-hand-mobile@2x.png") left bottom no-repeat;
+      background-size: 258px 286px;
+    }
   }
 }
 
