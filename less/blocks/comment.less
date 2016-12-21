@@ -1,6 +1,10 @@
 .comment {
   text-align: center;
   margin: 0;
+
+  @media @tablet-widths {
+    padding-top: 28px;
+  }
 }
 
 .comment__wrapper {
@@ -8,10 +12,16 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 35px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+
+  @media @tablet-widths {
+    padding-bottom: 12px;
+  }
 
   @media @desktop-widths {
-    padding-top: 180px;
+    padding-top: 159px;
+    background: url("../img/icon-quotes.svg") center 45px no-repeat;
   }
 }
 
@@ -20,9 +30,11 @@
   font-style: normal;
   font-weight: @font-weight-bold;
   line-height: 30px;
+  margin-bottom: 15px;
 
   @media @tablet-widths {
     order: 2;
+    margin-bottom: 2px;
     font-size: 20px;
   }
 
@@ -40,12 +52,16 @@
 
     @media @tablet-widths {
       display: block;
-      margin-bottom: 30px;
+      margin-bottom: 32px;
     }
   }
 
   @media @tablet-widths {
     order: 3;
+  }
+
+  @media @desktop-widths {
+    font-size: 18px;
   }
 }
 
@@ -60,6 +76,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 35px;
   }
 }
 
@@ -67,9 +84,10 @@
   color: @text-color;
   line-height: 30px;
   margin: 0;
-  margin-bottom: 20px;
+  margin-bottom: 32px;
 
   @media @tablet-widths {
+    margin-bottom: 5px;
     font-size: @font-size;
   }
 

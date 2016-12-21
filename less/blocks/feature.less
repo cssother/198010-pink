@@ -3,32 +3,21 @@
   background-color: @grey-color;
 }
 
-.feature__top-bg {
-  position: absolute;
-}
-
-.feature__top-bg svg {
-  fill: #fff;
-  width: 100%;
-  height: auto;
-  margin-top: -1px;
-}
-
 .feature__wrapper {
   .container();
   position: relative;
   display: flex;
   justify-content: center;
-  padding-top: 77px;
+  padding-top: 70px;
 
   @media @only-mobile-widths {
     padding-bottom: 291px;
-    background: url("../img/iphone-screen-mobile@1x.png") center 518px no-repeat;
+    background: url("../img/iphone-screen-mobile@1x.png") center 512px no-repeat;
   }
 
   @media (max-width: 699px) and (min-resolution: 144dpi),
   (max-width: 699px) and (min-resolution: 1.5dppx) {
-    background: url("../img/iphone-screen-mobile@2x.png") center 518px no-repeat;
+    background: url("../img/iphone-screen-mobile@2x.png") center 512px no-repeat;
     background-size: 157px 320px;
   }
 
@@ -47,6 +36,7 @@
 
   @media @desktop-widths {
     padding-top: 0;
+    padding-bottom: 0;
     background: transparent;
   }
 }

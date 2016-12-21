@@ -1,6 +1,6 @@
 .table {
-  margin-bottom: 30px;
-  background-color: #e5e5e5;
+  margin-bottom: 39px;
+  border-collapse: collapse;
 
   @media @tablet-widths {
     width: 620px;
@@ -13,12 +13,25 @@
   }
 }
 
+.table td {
+
+  @media @tablet-widths {
+    width: (25% - 2px);
+  }
+}
+
+.table__header-field, .table__item-title, .table__item-name {
+  border: 2px solid #e5e5e5;
+}
+
 .table__header-field {
-  min-width: 280px;
-  padding: 15px 0;
+  position: relative;
+  min-width: 277px;
+  padding: 19px 0;
   text-align: center;
   color: #fff;
   background-color: #283645;
+  overflow: hidden;
 
   &--visibility {
     display: none;
@@ -26,20 +39,43 @@
     @media @tablet-widths {
       display: table-cell;
       background-color: @grey-color;
+      border: 0;
+    }
+  }
+
+  &--hit:after {
+    content: "хит";
+    position: absolute;
+    display: block;
+    top: 12px;
+    left: -32px;
+    width: 110px;
+    height: 30px;
+    font-size: 14px;
+    line-height: 30px;
+    text-align: center;
+    text-transform: uppercase;
+    background-color: @accented-text-color;
+    transform: rotate(-45deg);
+
+    @media @tablet-widths {
+      top: 4px;
+      left: -34px;
+    }
+
+    @media @desktop-widths {
+      top: 12px;
+      left: -32px;
     }
   }
 
   @media @tablet-widths {
     min-width: 0;
-
+    padding: 12px 0 7px 0;
   }
-}
 
-.table__item-title {
-  display: none;
-
-  @media @tablet-widths {
-    display: table-cell;
+  @media @desktop-widths {
+    padding: 17px 0 22px 0;
   }
 }
 
@@ -72,60 +108,51 @@
   }
 }
 
+.table__item-title {
+  display: none;
+  background-color: #fff;
+  line-height: 30px;
+  padding: 20px;
+
+  @media @tablet-widths {
+    display: table-cell;
+    padding: 7px 15px;
+  }
+
+  @media @desktop-widths {
+    font-size: @font-size;
+    padding: 14px 22px;
+  }
+}
+
 .table__item-name {
   position: relative;
   background-color: #fff;
   text-transform: uppercase;
   line-height: 30px;
-  padding: 20px 55px 20px 20px;
+  padding: 13px 20px 16px 20px;
 
   @media @tablet-widths {
-    padding: 20px;
-  }
-
-  &::before {
-    content: "";
-    position: absolute;
-    right: 20px;
-    top: 50%;
-    margin-top: -12px;
-    width: 30px;
-    height: 25px;
-    background: url("http://placehold.it/30x25") 50% 50% no-repeat;
-
-    @media @tablet-widths {
-      right: 50%;
-      margin-right: -15px;
-    }
-  }
-
-  &--missing{
-
-    &::before {
-      content: "";
-      position: absolute;
-      right: 20px;
-      top: 50%;
-      margin-top: -12px;
-      width: 30px;
-      height: 25px;
-      background: url("http://placehold.it/30x25") 50% 50% no-repeat;
-
-      @media @tablet-widths {
-        right: 50%;
-        margin-right: -15px;
-      }
-    }
-  }
-
-  @media @tablet-widths {
-    width: 25%;
+    padding: 0;
     font-size: 0;
   }
 }
 
-.table__item-title {
-  background-color: #fff;
-  line-height: 30px;
-  padding: 20px;
+.table__item-name svg {
+  float: right;
+  fill: #3dc644;
+}
+
+.table__item-name--missing svg {
+  fill: #f25b26;
+}
+
+.table__inner-block {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  @media @tablet-widths {
+    justify-content: center;
+  }
 }

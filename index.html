@@ -23,6 +23,15 @@
       <path id="path5062" fill="#2DABE2" d="M20.873,41.992H0V22.04h20.873V41.992z"/>
       <path id="path5064" fill="#F9BC15" d="M43.922,41.992H23.049V22.04h20.873V41.992z"/>
     </symbol>
+    <symbol id="icon-yes" viewBox="-82.357 4.875 21.698 16.09">
+      <path d="M-60.953,5.167c-0.391-0.391-1.023-0.391-1.414,0L-75.75,18.551l-4.9-4.9c-0.391-0.391-1.023-0.391-1.414,0 s-0.391,1.023,0,1.414l5.607,5.607c0.195,0.195,0.451,0.293,0.707,0.293s0.512-0.098,0.707-0.293l14.09-14.0 C-60.562,6.191-60.562,5.558-60.953,5.167z"/>
+    </symbol>
+    <symbol id="icon-no" viewBox="0 0 26.752 26.752">
+      <path d="M15.497,13.376L26.312,2.562c0.586-0.585,0.586-1.535,0-2.121s-1.535-0.586-2.121,0L13.376,11.255L2.562,0.439 c-0.586-0.586-1.535-0.586-2.121,0c-0.586,0.585-0.586,1.535,0,2.121l10.814,10.815L0.439,24.19c-0.586,0.586-0.586,1.535,0,2.121 c0.293,0.293,0.677,0.439,1.061,0.439s0.768-0.146,1.061-0.439l10.815-10.814L24.19,26.312c0.293,0.293,0.677,0.439,1.061,0.439 s0.768-0.146,1.061-0.439c0.586-0.586,0.586-1.535,0-2.121L15.497,13.376z"/>
+    </symbol>
+    <symbol id="icon-timer" viewBox="0 0 298 345.097">
+      <path d="M264.568,102.055l5.355-5.355c7.717-7.717,9.124-18.938,3.126-24.935c-5.997-5.997-17.217-4.59-24.934,3.127l-5.386,5.385 C221.768,63.292,196.11,51.875,168,48.297v-9.583h7.658c10.914,0,19.843-8.711,19.843-19.357S186.573,0,175.659,0h-53.317  c-10.913,0-19.842,8.711-19.842,19.357s8.929,19.357,19.842,19.357H130v9.583C56.681,57.629,0,120.244,0,196.097  c0,82.291,66.709,149,149,149c82.29,0,149-66.709,149-149C298,160.434,285.465,127.703,264.568,102.055z M149,306.264 c-60.844,0-110.167-49.323-110.167-110.167S88.156,85.93,149,85.93c60.843,0,110.167,49.323,110.167,110.167  S209.843,306.264,149,306.264z"/>
+    </symbol>
   </svg>
   <header class="header">
     <div class="header-top">
@@ -122,7 +131,7 @@
       </div>
     </div>
     <div class="feature">
-      <div class="feature__top-bg">
+      <div class="triangle-block">
         <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="1200px" height="94.074px" viewBox="0 0 1200 94.074" enable-background="new 0 0 1200 94.074" xml:space="preserve">
           <polygon points="1200,0 0,0 0,94.074 "/>
         </svg>
@@ -146,6 +155,11 @@
     </div>
     <div class="study">
       <div class="study__wrapper">
+        <div class="study__timer">
+          <div class="study__timer-wrap">
+            <svg width="238px" height="276px"><use xlink:href="#icon-timer"></use></svg>
+          </div>
+        </div>
         <div class="study__content">
           <h2 class="study__title">Эффект на 24 часа!</h2>
           <p class="study__text">Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!
@@ -169,9 +183,9 @@
         </div>
         <div class="toggle toggle__comment  toggle__comment--visibility">
           <div class="toggle__wrapper">
-            <input class="toggle__input" id="comment-1" type="radio" name="comment">
+            <input class="toggle__input" id="comment-1" type="radio" name="comment" checked>
             <label class="toggle__item" for="comment-1"></label>
-            <input class="toggle__input" id="comment-2"  type="radio" name="comment" checked>
+            <input class="toggle__input" id="comment-2"  type="radio" name="comment">
             <label class="toggle__item" for="comment-2"></label>
             <input class="toggle__input" id="comment-3" type="radio" name="comment">
             <label class="toggle__item" for="comment-3"></label>
@@ -180,6 +194,11 @@
       </div>
     </blockquote>
     <div class="price">
+      <div class="triangle-block">
+        <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="1200px" height="94.074px" viewBox="0 0 1200 94.074" enable-background="new 0 0 1200 94.074" xml:space="preserve">
+          <polygon points="1200,0 0,0 0,94.074 "/>
+        </svg>
+      </div>
       <div class="price__wrapper">
         <table class="table">
           <tr class="table__header">
@@ -188,7 +207,7 @@
               <span class="table__header-name">база</span><br/>
               <span class="table__header-cost">1,99 USD</span>
             </td>
-            <td class="table__header-field">
+            <td class="table__header-field  table__header-field--hit">
               <span class="table__header-name">стандарт</span><br/>
               <span class="table__header-cost">3,99 USD</span>
             </td>
@@ -197,23 +216,71 @@
               <span class="table__header-cost">9,99 USD</span>
             </td>
           </tr>
+
           <tr class="table__item">
             <td class="table__item-title">Розовый фильтр</td>
-            <td class="table__item-name">Розовый фильтр</td>
-            <td class="table__item-name">Розовый фильтр</td>
-            <td class="table__item-name">Розовый фильтр</td>
+            <td class="table__item-name">
+              <div class="table__inner-block">
+                <span>Розовый фильтр</span>
+                <svg width="31px" height="22"><use xlink:href="#icon-yes"></use></svg>
+              </div>
+            </td>
+            <td class="table__item-name">
+              <div class="table__inner-block">
+                <span>Розовый фильтр</span>
+                <svg width="31px" height="22"><use xlink:href="#icon-yes"></use></svg>
+              </div>
+            </td>
+            <td class="table__item-name">
+              <div class="table__inner-block">
+                <span>Розовый фильтр</span>
+                <svg width="31px" height="22"><use xlink:href="#icon-yes"></use></svg>
+              </div>
+            </td>
           </tr>
+
           <tr class="table__item">
             <td class="table__item-title">Смайлики</td>
-            <td class="table__item-name  table__item-name--missing">Смайлики</td>
-            <td class="table__item-name">Смайлики</td>
-            <td class="table__item-name">Смайлики</td>
+            <td class="table__item-name  table__item-name--missing">
+              <div class="table__inner-block">
+                <span>Смайлики</span>
+                <svg width="27px" height="26px"><use xlink:href="#icon-no"></use></svg>
+              </div>
+            </td>
+            <td class="table__item-name">
+              <div class="table__inner-block">
+                <span>Смайлики</span>
+                <svg width="31px" height="21"><use xlink:href="#icon-yes"></use></svg>
+              </div>
+            </td>
+            <td class="table__item-name">
+              <div class="table__inner-block">
+                <span>Смайлики</span>
+                <svg width="31px" height="22"><use xlink:href="#icon-yes"></use></svg>
+              </div>
+            </td>
           </tr>
+
           <tr class="table__item">
             <td class="table__item-title">Комментарии</td>
-            <td class="table__item-name  table__item-name--missing">Комментарии</td>
-            <td class="table__item-name  table__item-name--missing">Комментарии</td>
-            <td class="table__item-name">Комментарии</td>
+            <td class="table__item-name  table__item-name--missing">
+              <div class="table__inner-block">
+                <span>Комментарии</span>
+                <svg width="27px" height="26px"><use xlink:href="#icon-no"></use></svg>
+              </div>
+            </td>
+            <td class="table__item-name  table__item-name--missing">
+              <div class="table__inner-block">
+                <span>Комментарии</span>
+                <svg width="27px" height="26px"><use xlink:href="#icon-no"></use></svg>
+              </div>
+            </td>
+            <td class="table__item-name">
+              <div class="table__inner-block">
+                <span>Комментарии</span>
+                <svg width="31px" height="22"><use xlink:href="#icon-yes"></use></svg>
+              </div>
+            </td>
           </tr>
         </table>
         <div class="toggle price__toggle">

@@ -6,8 +6,18 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 35px;
+  padding-top: 92px;
+  padding-bottom: 45px;
   overflow: hidden;
+
+  @media @tablet-widths {
+    padding-top: 97px;
+  }
+
+  @media @desktop-widths {
+    padding-top: 143px;
+    padding-bottom: 0;
+  }
 }
 
 .price__toggle {
