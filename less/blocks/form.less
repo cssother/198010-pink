@@ -1,3 +1,7 @@
+.form {
+  margin-bottom: 19px;
+}
+
 .form__wrapper {
   display: flex;
   flex-direction: column;
@@ -36,7 +40,7 @@
 .form__btn {
   display: block;
   padding: 15px 0;
-  margin-bottom: 40px;
+  margin-bottom: 38px;
   width: 280px;
   border-radius: 3px;
   border: none;
@@ -47,6 +51,15 @@
   color: #fff;
   background-color: #2aab6d;
   cursor: pointer;
+
+  &:hover {
+    background-color: #1c9b5e;
+  }
+
+  &:active {
+    background-color: #1c9b5e;
+    color: rgba(255, 255, 255, 0.3);
+  }
 
   @media @tablet-widths {
     width: 300px;

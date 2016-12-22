@@ -12,7 +12,7 @@
 .field-checkbox__wrapper {
   .container();
   padding-top: 40px;
-  padding-bottom: 45px;
+  padding-bottom: 50px;
 
   @media @desktop-widths {
     margin: 0;
@@ -35,7 +35,7 @@
 }
 
 .field-checkbox__title {
-  margin-bottom: 35px;
+  margin-bottom: 44px;
   margin-left: 25px;
   margin-right: 25px;
   line-heigth: 18px;
@@ -51,7 +51,7 @@
 
 .field-checkbox__item {
   display: block;
-  margin-bottom: 45px;
+  margin-bottom: 55px;
   font-size: 24px;
 }
 
@@ -82,6 +82,14 @@
   }
 }
 
-.field-checkbox__input:checked + .field-checkbox__text::before {
-  background: #fff url("http://placehold.it/10x10") 50% 50% no-repeat;
+.field-checkbox__input:checked + .field-checkbox__text::after {
+  content: "";
+  position: absolute;
+  left: 9px;
+  top: 4px;
+  width: 21px;
+  height: 8px;
+  border-left: 2px solid @accented-text-color;
+  border-bottom: 2px solid @accented-text-color;
+  transform: rotate(-45deg);
 }

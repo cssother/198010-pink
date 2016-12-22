@@ -12,7 +12,7 @@
 
     @media @tablet-widths {
       background: url("../img/iphone-hand-tablet@1x.png") center center no-repeat,
-                  url("../img/bg-back-tablet@1x.jpg") center center no-repeat;
+      url("../img/bg-back-tablet@1x.jpg") center center no-repeat;
       margin: auto 0;
       padding-top: 204px;
       padding-bottom: 113px;
@@ -21,14 +21,14 @@
 
       @media @retina {
         background: url("../img/iphone-hand-tablet@2x.png") center center no-repeat,
-                    url("../img/bg-back-tablet@2x.jpg") center center no-repeat;
+        url("../img/bg-back-tablet@2x.jpg") center center no-repeat;
         background-size: 700px 545px, 1200px 729px;
       }
     }
 
     @media @desktop-widths {
       background: url("../img/iphone-hand-desktop-work@1x.png") center center no-repeat,
-                  url("../img/bg-back-desktop@1x.jpg") center center no-repeat;
+      url("../img/bg-back-desktop@1x.jpg") center center no-repeat;
       margin: auto 0;
       padding-top: 222px;
       padding-bottom: 123px;
@@ -37,15 +37,15 @@
 
       @media @retina {
         background: url("../img/iphone-hand-desktop-work@2x.png") center center no-repeat,
-                    url("../img/bg-back-desktop@2x.jpg") center center no-repeat;
+        url("../img/bg-back-desktop@2x.jpg") center center no-repeat;
         background-size: 940px 645px, 2560px 853px;
       }
     }
   }
 
   &--form {
-    padding-top: 95px;
-    padding-bottom: 50px;
+    padding-top: 98px;
+    padding-bottom: 57px;
 
     @media @tablet-widths {
       padding-top: 175px;
@@ -81,13 +81,16 @@
   flex-direction: column;
   justify-content: flex-end;
 
-  @media @only-mobile-widths {
-    background: url("../img/iphone-hand-mobile@1x.png") left bottom no-repeat;
-    padding-top: 463px;
+  &--bg {
 
-    @media @retina {
-      background: url("../img/iphone-hand-mobile@2x.png") left bottom no-repeat;
-      background-size: 258px 286px;
+    @media @only-mobile-widths {
+      background: url("../img/iphone-hand-mobile@1x.png") left bottom no-repeat;
+      padding-top: 463px;
+
+      @media @retina {
+        background: url("../img/iphone-hand-mobile@2x.png") left bottom no-repeat;
+        background-size: 258px 286px;
+      }
     }
   }
 }
