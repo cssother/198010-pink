@@ -4,6 +4,12 @@
   height: 26px;
   overflow: hidden;
 
+  &--footer {
+    width: auto;
+    height: auto;
+    overflow: visible;
+  }
+
   @media @tablet-widths {
     width: 147px;
     height: 41px;
@@ -18,16 +24,20 @@
   }
 }
 
+.main-logo__link--footer svg {
+
+  @media @only-mobile-widths {
+    transform: none;
+  }
+}
+
 .main-logo__link:hover .logo__text {
 
   @media @desktop-widths {
     fill: @accented-text-color;
   }
-}
 
-.main-logo__link:hover .logo__glasses-desktop-hover {
-
-  @media @desktop-widths {
+  &--footer {
     fill: @accented-text-color;
   }
 }
@@ -38,12 +48,50 @@
     fill: #ffffff;
     opacity: 0.3;
   }
+
+  &--footer {
+    fill: @text-color;
+    opacity: 0.3;
+  }
+}
+
+.main-logo__link:active .logo__glasses-tablet {
+
+  &--footer {
+    opacity: 0.3;
+  }
+}
+
+.main-logo__link:hover .logo__glasses-desktop-hover {
+
+  @media @desktop-widths {
+    fill: @accented-text-color;
+  }
 }
 
 .main-logo__link:active .logo__glasses-desktop-hover {
 
   @media @desktop-widths {
     fill: #ffffff;
+    opacity: 0.3;
+  }
+
+  &--footer {
+    fill: @accented-text-color;
+    opacity: 0.3;
+  }
+}
+
+.main-logo__link:active .logo__point {
+
+  &--footer {
+    opacity: 0.3;
+  }
+}
+
+.main-logo__link:active .logo__stars {
+
+  &--footer {
     opacity: 0.3;
   }
 }
