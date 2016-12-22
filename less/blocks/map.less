@@ -1,4 +1,38 @@
 .map__wrapper {
-  min-width: 320px;
+  position: relative;
+  min-width: 95vw;
+  height: auto;;
   margin: 0 auto;
+
+  @media @tablet-widths {
+    min-width: 620px;
+  }
+
+  @media @desktop-widths {
+    min-width: 940px;
+  }
+}
+
+.map__wrapper iframe {
+  min-height: 200px;
+
+  @media @tablet-widths {
+    min-height: 404px;
+  }
+
+  @media @desktop-widths {
+    min-height: 515px;
+  }
+}
+
+.map__triangle {
+  position: absolute;
+  width: 100%;
+  margin-top: -4px;
+}
+
+.map__triangle svg {
+  fill: #ffffff;
+  width: 100%;
+  height: auto;
 }
