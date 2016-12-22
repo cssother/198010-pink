@@ -161,6 +161,18 @@
   border-color: #e5e5e5;
   outline: none;
 
+  &:hover {
+    border-color: @text-color;
+  }
+
+  &:active {
+    border-color: @accented-text-color;
+  }
+
+  &:focus {
+    border-color: @accented-text-color;
+  }
+
   @media @tablet-widths {
     flex-grow: 1;
     align-self: stretch;

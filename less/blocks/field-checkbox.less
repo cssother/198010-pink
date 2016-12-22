@@ -93,3 +93,27 @@
   border-bottom: 2px solid @accented-text-color;
   transform: rotate(-45deg);
 }
+
+.field-checkbox__item:hover .field-checkbox__text::before {
+  border-color: @text-color;
+}
+
+.field-checkbox__item:active .field-checkbox__text::before {
+  border-color: @accented-text-color;
+}
+
+.field-checkbox__item:active .field-checkbox__input + .field-checkbox__text::after {
+  content: "";
+  position: absolute;
+  left: 9px;
+  top: 4px;
+  width: 21px;
+  height: 8px;
+  border-left: 2px solid @accented-text-color;
+  border-bottom: 2px solid @accented-text-color;
+  transform: rotate(-45deg);
+}
+
+.field-checkbox__item:active .field-checkbox__input:checked + .field-checkbox__text::after {
+  display: none;
+}
