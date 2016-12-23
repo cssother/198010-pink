@@ -1,5 +1,13 @@
 .form {
   margin-bottom: 19px;
+
+  @media @tablet-widths {
+    margin-bottom: 55px;
+  }
+
+  @media @desktop-widths {
+    margin-bottom: 0;
+  }
 }
 
 .form__wrapper {
@@ -11,7 +19,7 @@
     .container();
     flex-direction: row;
     justify-content: space-between;
-    align-items: center;
+    align-items: top;
   }
 }
 
@@ -19,7 +27,6 @@
 
   @media @tablet-widths {
     order: 6;
-    margin-bottom: 50px;
   }
 }
 
@@ -95,4 +102,12 @@
 
 .form__mark {
   color: @accented-text-color;
+}
+
+.form__endnote-visible {
+  display: none;
+
+  @media @desktop-widths {
+    display: inline;
+  }
 }
