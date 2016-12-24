@@ -154,6 +154,22 @@
 .field-text__input-with-icon {
   display: flex;
   width: 100%;
+
+  @media @desktop-widths {
+    border: 2px solid #e5e5e5;
+
+    &:hover {
+      border-color: @text-color;
+    }
+
+    &:active {
+      border-color: @accented-text-color;
+    }
+  }
+}
+
+.field-text__input-with-icon input {
+  border: 0;
 }
 
 .field-text__input {
@@ -163,7 +179,8 @@
   line-height: 30px;
   font-size: @font-size;
   color: @text-color;
-  border-color: #e5e5e5;
+  border: 0;
+  border: 2px solid #e5e5e5;
   outline: none;
 
   &:hover {
@@ -171,10 +188,6 @@
   }
 
   &:active {
-    border-color: @accented-text-color;
-  }
-
-  &:focus {
     border-color: @accented-text-color;
   }
 
@@ -229,6 +242,7 @@
   line-height: 30px;
   border: 2px solid #e5e5e5;
   outline: none;
+  resize: none;
 
   @media @tablet-widths {
     height: 193px;
