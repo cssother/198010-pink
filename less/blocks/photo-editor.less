@@ -2,7 +2,7 @@
   background-color: @grey-color;
 
   @media @tablet-widths {
-    padding-top: 57px;
+    padding-top: 56px;
     padding-bottom: 54px;
   }
 
@@ -27,6 +27,7 @@
   @media @desktop-widths {
     width: 800px;
     margin: 0 auto;
+    margin-bottom: 31px;
     padding: 55px 60px 55px 80px;
     background-color: @grey-color;
   }
@@ -41,7 +42,7 @@
 }
 
 .photo-editor__user-photo {
-  margin-bottom: 40px;
+  margin-bottom: 18px;
 
   @media @tablet-widths {
     width: 300px;
@@ -50,7 +51,7 @@
 
 .photo-editor__tools-wrap {
   display: flex;
-  justify-content: space-around;
+  justify-content: flex-start;
   flex-wrap: wrap;
   margin-bottom: 30px;
 
@@ -63,19 +64,36 @@
     align-items: flex-end;
     margin-left: auto;
     margin-bottom: 0;
+    padding-top: 5px;
     width: 280px;
     min-height: 215px;
   }
 
   @media @desktop-widths {
     width: 410px;
+    padding-top: 0;
   }
 }
 
 .photo-editor__block-tool {
+  display: flex;
+
+  @media @only-mobile-widths{
+
+    &--crop {
+      margin-left: 38px;
+    }
+
+    &--fill {
+      margin-left: 25px;
+    }
+
+    &--contrast {
+      margin-left: 28px;
+    }
+  }
 
   @media @tablet-widths {
-    display: flex;
     justify-content: space-between;
     align-items: center;
     width: 100%;
@@ -87,28 +105,90 @@
       margin-bottom: 0;
     }
   }
+
+  @media @desktop-widths {
+    padding-bottom: 17px;
+    margin-bottom: 12px;
+  }
 }
 
 .photo-editor__icon-tool {
-  width: 45px;
-  height: 45px;
+  width: auto;
+  height: auto;
   font-size: 0;
   border: none;
   outline: none;
-  background: inherit url("http://placehold.it/45x45") center center no-repeat;
+  background-color: inherit;
+  cursor: pointer;
 
-  @media @tablet-widths {
+  @media @only-tablet-widths {
+    padding: 0;
     width: 30px;
     height: 30px;
   }
 
   @media @desktop-widths {
-    width: 45px;
-    height: 45px;
+    padding: 0;
+  }
+}
+
+.photo-editor__icon-tool svg {
+  fill: #b5b9be;
+
+  @media @only-mobile-widths {
+
+    &:hover {
+      fill: #8d949b;
+    }
+  }
+
+  @media @tablet-widths {
+    fill: @accented-text-color;
+  }
+}
+
+.photo-editor__icon-tool--active svg {
+  fill: @accented-text-color;
+}
+
+.photo-editor__icon-tool--active:hover svg {
+  fill: @accented-text-color;
+}
+
+.photo-editor__icon-crop {
+
+  @media @only-tablet-widths {
+    width: 24px;
+    height: auto;
+    margin-left: 3px;
+  }
+}
+
+.photo-editor__icon-fill {
+
+  @media @only-tablet-widths {
+    width: 28px;
+    height: auto;
+    margin-top: 7px;
+    margin-left: 4px;
+  }
+}
+
+.photo-editor__icon-contrast {
+
+  @media @only-tablet-widths {
+    width: 17px;
+    height: auto;
+    margin-left: 8px;
+  }
+
+  @media @desktop-widths {
+    margin-left: 5px;
   }
 }
 
 .photo-editor__delimiter {
+  margin-bottom: 37px;
 
   @media @tablet-widths {
     display: none;
@@ -117,14 +197,17 @@
 
 .photo-editor__buttons {
   background-color: @grey-color;
+  padding-bottom: 42px;
+
+  @media @tablet-widths{
+    padding-bottom: 0;
+  }
 }
 
 .photo-editor__buttons-wrap {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  padding-top: 40px;
-  padding-bottom: 40px;
 
   @media @only-mobile-widths {
     .container();
@@ -132,6 +215,7 @@
 
   @media @tablet-widths {
     flex-direction: column;
+    align-items: flex-end;
     padding: 0;
   }
 
@@ -153,11 +237,22 @@
   line-height: @line-height;
   font-weight: @font-weight-bold;
   color: rgba(40, 54, 69, 0.1);
+  outline: none;
 
   &--submit {
     margin-bottom: 12px;
     color: @accented-text-color;
     border-color: @accented-text-color;
+
+    &:hover {
+      background-color: @accented-text-color;
+      color: #fff;
+    }
+
+    &:active {
+      background-color: @accented-text-color;
+      color: rgba(255, 255, 255, 0.3);
+    }
 
     @media @tablet-widths {
       margin-bottom: 24px;
@@ -168,7 +263,30 @@
     }
   }
 
+  &--remove {
+
+    &:hover {
+      border-color: #b5b9be;
+      color: #b5b9be;
+    }
+
+    &:active {
+      border-color: #b5b9be;
+      background-color: #b5b9be;
+      color: rgba(255, 255, 255, 0.3);
+    }
+  }
+
+  @media @tablet-widths {
+    width: 260px;
+    margin-right: 14px;
+  }
+
   @media @desktop-widths {
     width: 180px;
+
+    &--remove {
+      margin-right: 0;
+    }
   }
 }

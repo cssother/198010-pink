@@ -111,3 +111,17 @@
   font-weight: @font-weight-light;
   text-decoration: none;
 }
+
+.contacts__link[href^="mailto"] {
+
+  &:hover {
+    color: @text-color;
+    border-bottom: 1px solid @text-color;
+  }
+
+  &:active {
+    color: @text-color;
+    border-bottom: none;
+    opacity: 0.3;
+  }
+}
