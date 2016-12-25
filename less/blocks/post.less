@@ -17,7 +17,7 @@
     margin-bottom: 0;
 
     &:nth-child(n+4) {
-      margin-top: 54px;
+      margin-top: 52px;
     }
 
     &--best {
@@ -35,20 +35,49 @@
 }
 
 .post__content {
-  margin: 0;
+  margin: 0 auto;
   text-align: center;
-  background-color: @grey-color;
+  font-size: 0;
+
 
   &--best {
-    width: 100%;
-    height: 137px;
+    width: 320px;
+    height: auto;
+
+    @media @tablet-widths {
+      width: 700px;
+    }
+
+    @media @desktop-widths {
+      width: 1200px;
+    }
   }
+}
 
-  @media @tablet-widths {
-    height: 300px;
+.post__content--best {
+  position: relative;
 
-    &--best {
-      height: 510px;
+  &::before {
+    content: "Панорама дня";
+    position: absolute;
+    width: 101px;
+    padding: 10px 20px;
+    top: 0;
+    right: 20px;
+    color: #fff;
+    font-weight: @font-weight-bold;
+    font-size: 12px;
+    text-transform: uppercase;
+    background-color: @accented-text-color;
+
+    @media @tablet-widths {
+      top: 57px;
+      right: 40px;
+    }
+
+    @media @desktop-widths {
+      top: 54px;
+      right: 130px;
     }
   }
 }
@@ -59,7 +88,7 @@
 
 .post__description {
   margin: 0;
-  padding: 20px;
+  padding: 18px 18px 20px 18px;
   line-height: 24px;
   background-color: @grey-color;
 
@@ -67,13 +96,14 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 105px;
-    padding: 25px;
+    height: 110px;
+    padding: 24px 30px 22px 28px;
 
     &--best {
       flex-direction: row;
       flex-wrap: wrap;
       height: auto;
+      padding: 24px 27px 23px 28px;
     }
   }
 }
@@ -104,7 +134,7 @@
 
 .post__text {
   margin: 0;
-  margin-bottom: 10px;
+  margin-bottom: 8px;
   color: @text-color;
 
   @media @tablet-widths {
@@ -118,7 +148,7 @@
 
 .post__btn {
   position: relative;
-  padding-left: 45px;
+  padding-left: 32px;
   font-size: 12px;
   line-height: 24px;
   color: @accented-text-color;
@@ -133,7 +163,11 @@
     left: 0;
     top: 50%;
     margin-top: -8px;
-    background: #fff url("http://placehold.it/15x15") center center no-repeat;
+    background: url("../img/icon-heart.svg") center center no-repeat;
+
+    @media @tablet-widths {
+      margin-top: -10px;
+    }
   }
 
   @media @tablet-widths {
@@ -141,18 +175,22 @@
     width: auto;
 
     &::before {
-      left: 235px;
+      left: 227px;
     }
 
     &--best {
       order: 2;
       padding-left: 0;
-      padding-right: 30px;
+      padding-right: 31px;
 
       &::before {
         left: 104px;
         top: 50%;
         margin-top: -8px;
+      }
+
+      @media @desktop-widths {
+        padding-right: 35px;
       }
     }
   }

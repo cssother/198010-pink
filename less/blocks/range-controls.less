@@ -1,6 +1,7 @@
 .range-controls {
   position: relative;
   width: 240px;
+  margin: 0 auto;
 
   @media @only-mobile-widths {
     display: none;
@@ -18,8 +19,8 @@
 
   &--common {
     display: none;
-    margin-top: 30px;
-    background-color: @text-color;
+    margin-top: 38px;
+    margin-bottom: 27px;
 
     @media @only-mobile-widths {
       display: block;
@@ -42,37 +43,42 @@
   background-color: #f2f2f2;
   border: 2px solid @accented-text-color;
   border-radius: 50%;
+  cursor: pointer;
 
-  &--cutting {
+  &:active {
+    background-color: @accented-text-color;
+  }
+
+  &--crop {
 
     @media @tablet-widths {
-      left: 80%;
+      left: 73%;
     }
 
     @media @desktop-widths {
-      left: 30%;
+      left: 25%;
     }
   }
 
-  &--color {
+  &--fill {
 
     @media @tablet-widths {
-      left: 15%;
+      left: 12%;
     }
 
     @media @desktop-widths {
-      left: 85%;
+      left: 86%;
     }
   }
 
-  &--bright {
+  &--contrast {
 
     @media @tablet-widths {
-      left: 50%;
+      left: 47%;
     }
 
     @media @desktop-widths {
-      left: 60%;
+      left: 56%;
     }
   }
 }

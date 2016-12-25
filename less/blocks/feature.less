@@ -1,14 +1,44 @@
 .feature {
-  background-color: @grey-color;
-
+  background: @grey-color url("../img/bg-triangle-white.svg") center -1px no-repeat;
+  background-size: 110% auto;
 }
 
 .feature__wrapper {
   .container();
+  position: relative;
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
-  padding-top: 40px;
+  padding-top: 70px;
+
+  @media @only-mobile-widths {
+    padding-bottom: 291px;
+    background: url("../img/iphone-screen-mobile@1x.png") center 512px no-repeat;
+  }
+
+  @media (max-width: 699px) and (min-resolution: 144dpi),
+  (max-width: 699px) and (min-resolution: 1.5dppx) {
+    background: url("../img/iphone-screen-mobile@2x.png") center 512px no-repeat;
+    background-size: 157px 320px;
+  }
+
+  @media @tablet-widths {
+    justify-content: flex-end;
+    padding-top: 70px;
+    padding-bottom: 27px;
+    background: url("../img/iphone-screen-3-tablet@1x.png") 40px bottom no-repeat;
+  }
+
+  @media (min-width: 700px) and (min-resolution: 144dpi),
+  (min-width: 700px) and (min-resolution: 1.5dppx) {
+    background: url("../img/iphone-screen-3-tablet@2x.png") 40px bottom no-repeat;
+    background-size: 268px 481px;
+  }
+
+  @media @desktop-widths {
+    padding-top: 0;
+    padding-bottom: 0;
+    background: transparent;
+  }
 }
 
 .feature__heading {
@@ -27,52 +57,78 @@
 
 
   @media @tablet-widths {
-    order: 2;
     width: 50%;
     text-align: left;
   }
 
   @media @desktop-widths {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     width: 100%;
+    padding: 0 30px;
     text-align: center;
   }
 }
 
 .feature__item {
-  margin-bottom: 40px;
+  margin-bottom: 28px;
 
   &:first-child {
 
     @media @desktop-widths {
-      background-image: url("http://placehold.it/240x300");
-      background-position: top;
+      background-image: url("../img/iphone-screen-1-desktop@1x.png");
+      background-position: center top;
       background-repeat: no-repeat;
+    }
+
+    @media (min-width: 1200px) and (min-resolution: 144dpi),
+            (min-width: 1200px) and (min-resolution: 1.5dppx) {
+      background: url("../img/iphone-screen-1-desktop@2x.png") center top no-repeat;
+      background-size: 292px auto;
     }
   }
 
   &:nth-child(2) {
 
     @media @desktop-widths {
-      background-image: url("http://placehold.it/240x300");
-      background-position: top;
+      background-image: url("../img/iphone-screen-2-desktop@1x.png");
+      background-position: center top;
       background-repeat: no-repeat;
+    }
+
+    @media (min-width: 1200px) and (min-resolution: 144dpi),
+            (min-width: 1200px) and (min-resolution: 1.5dppx) {
+      background: url("../img/iphone-screen-2-desktop@2x.png") center top no-repeat;
+      background-size: 292px auto;
     }
   }
 
   &:last-child {
 
+    @media @tablet-widths {
+      margin-bottom: 0;
+    }
+
     @media @desktop-widths {
-      background-image: url("http://placehold.it/240x300");
-      background-position: top;
+      background-image: url("../img/iphone-screen-3-desktop@1x.png");
+      background-position: center top;
       background-repeat: no-repeat;
+    }
+
+    @media (min-width: 1200px) and (min-resolution: 144dpi),
+            (min-width: 1200px) and (min-resolution: 1.5dppx) {
+      background: url("../img/iphone-screen-3-desktop@2x.png") center top no-repeat;
+      background-size: 292px auto;
     }
   }
 
+  @media @tablet-widths {
+    margin-bottom: 32px;
+  }
+
   @media @desktop-widths {
-    width: 260px;
-    padding-top: 360px;
+    width: 240px;
+    padding-top: 331px;
   }
 }
 
@@ -80,10 +136,15 @@
   font-size: @font-size;
   line-height: 24px;
   font-weight: @font-weight-bold;
+  margin-bottom: 0;
 
   @media @desktop-widths {
     font-size: 30px;
     line-height: 30px;
+  }
+
+  @media @desktop-widths {
+    margin-bottom: 25px;
   }
 }
 
@@ -95,19 +156,5 @@
   @media @desktop-widths {
     font-size: @font-size;
     line-height: 30px;
-  }
-}
-
-.feature__img {
-  display: flex;
-  align-items: flex-end;
-
-  @media @tablet-widths {
-    width: 50%;
-    order: 1;
-  }
-
-  @media @desktop-widths {
-    display: none;
   }
 }

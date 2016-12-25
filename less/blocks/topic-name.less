@@ -1,12 +1,20 @@
 .topic-name__wrapper {
   .container();
+
+  @media @tablet-widths {
+    margin-bottom: 70px;
+  }
+
+  @media @desktop-widths {
+    margin-bottom: 65px;
+  }
 }
 
 .topic-name__text {
   color: @text-color;
   text-align: center;
   line-height: 30px;
-  margin: 45px 0;
+  margin: 45px 0 34px 0;
 
   @media @tablet-widths {
     margin: 90px 50px 50px 50px;
@@ -18,22 +26,22 @@
   }
 
   &--resize-photo {
-    margin: 50px 15px;
+    margin: 45px 15px 49px 15px;
 
     @media @tablet-widths {
-      margin: 90px 80px 75px 80px;
+      margin: 92px 80px 76px 80px;
     }
 
     @media @desktop-widths {
-      margin: 95px 170px 85px 170px;
+      margin: 93px 170px 88px 170px;
     }
   }
 
   &--belief {
-    margin: 50px 0;
+    margin: 23px 0 42px 0;
 
     @media @desktop-widths {
-      margin: 70px 0;
+      margin: 0;
     }
   }
 }

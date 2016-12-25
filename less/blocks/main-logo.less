@@ -1,0 +1,97 @@
+.main-logo__link {
+  display: block;
+  width: 76px;
+  height: 26px;
+  overflow: hidden;
+
+  &--footer {
+    width: auto;
+    height: auto;
+    overflow: visible;
+  }
+
+  @media @tablet-widths {
+    width: 147px;
+    height: 41px;
+    margin-bottom: 15px;
+  }
+}
+
+.main-logo__link svg {
+
+  @media @only-mobile-widths {
+    transform: translateX(-71px) translateY(-17px);
+  }
+}
+
+.main-logo__link--footer svg {
+
+  @media @only-mobile-widths {
+    transform: none;
+  }
+}
+
+.main-logo__link:hover .logo__text {
+
+  @media @desktop-widths {
+    fill: @accented-text-color;
+  }
+
+  &--footer {
+    fill: @accented-text-color;
+  }
+}
+
+.main-logo__link:active .logo__text {
+
+  @media @desktop-widths {
+    fill: #ffffff;
+    opacity: 0.3;
+  }
+
+  &--footer {
+    fill: @text-color;
+    opacity: 0.3;
+  }
+}
+
+.main-logo__link:active .logo__glasses-tablet {
+
+  &--footer {
+    opacity: 0.3;
+  }
+}
+
+.main-logo__link:hover .logo__glasses-desktop-hover {
+
+  @media @desktop-widths {
+    fill: @accented-text-color;
+  }
+}
+
+.main-logo__link:active .logo__glasses-desktop-hover {
+
+  @media @desktop-widths {
+    fill: #ffffff;
+    opacity: 0.3;
+  }
+
+  &--footer {
+    fill: @accented-text-color;
+    opacity: 0.3;
+  }
+}
+
+.main-logo__link:active .logo__point {
+
+  &--footer {
+    opacity: 0.3;
+  }
+}
+
+.main-logo__link:active .logo__stars {
+
+  &--footer {
+    opacity: 0.3;
+  }
+}

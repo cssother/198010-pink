@@ -1,0 +1,55 @@
+.logo__text {
+
+  &--footer {
+    fill: @text-color;
+  }
+}
+
+.logo__point {
+  display: none;
+
+  @media @desktop-widths {
+    display: block;
+  }
+}
+
+.logo__glasses-desktop {
+  display: none;
+
+  @media @desktop-widths {
+    display: block;
+  }
+
+  &--footer {
+    fill: @accented-text-color;
+  }
+}
+
+.logo__glasses-tablet {
+  display: none;
+
+  @media @only-tablet-widths {
+    display: block;
+  }
+
+  &--footer {
+    display: block;
+    fill: @accented-text-color;
+
+    @media @desktop-widths {
+      display: none;
+    }
+  }
+}
+
+.logo__stars {
+  display: none;
+
+  @media @desktop-widths {
+    display: block;
+  }
+
+  &--footer {
+    fill: @text-color;
+  }
+}

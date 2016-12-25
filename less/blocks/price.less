@@ -1,13 +1,25 @@
 .price {
-  background-color: @grey-color;
+  background: @grey-color url("../img/bg-triangle-white.svg") center -1px no-repeat;
+  background-size: 110% auto;
 }
 
 .price__wrapper {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 35px;
+  padding-top: 92px;
+  padding-bottom: 45px;
   overflow: hidden;
+
+  @media @tablet-widths {
+    padding-top: 97px;
+    padding-bottom: 5px;
+  }
+
+  @media @desktop-widths {
+    padding-top: 143px;
+    padding-bottom: 0;
+  }
 }
 
 .price__toggle {

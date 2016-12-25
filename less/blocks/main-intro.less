@@ -1,14 +1,31 @@
 .main-intro__wrapper {
   .container();
   text-align: center;
+  padding-top: 43px;
+  padding-bottom: 30px;
+
+  @media @tablet-widths {
+    padding-top: 50px;
+    padding-bottom: 40px;
+  }
+
+  @media @desktop-widths {
+    padding-top: 70px;
+    padding-bottom: 83px;
+  }
 }
 
 .main-intro__text {
   font-weight: @font-weight-light;
   color: @text-color;
   font-size: 24px;
+  margin: 0;
 
   &--narrow-block {
+
+    @media @only-mobile-widths {
+      margin-top: 31px;
+    }
 
     @media @tablet-widths {
       margin: 0 140px;

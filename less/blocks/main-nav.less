@@ -43,6 +43,14 @@
   border-bottom: 1px solid #000;
   border-top: 1px solid rgba(255, 255, 255, 0.15);
 
+  &:first-child {
+    box-shadow: 0 0 0 1px #000;
+
+    @media @desktop-widths {
+      box-shadow: none;
+    }
+  }
+
   @media @desktop-widths {
     background-color: transparent;
     border: none;
@@ -78,13 +86,15 @@
     display: inline;
     padding: 0;
     text-transform: none;
+    font-weight: @font-weight-normal;
   }
 
   &--active {
+    cursor: pointer;
 
     @media @desktop-widths {
       padding-bottom: 10px;
-      border-bottom: 1px solid #fff;
+      border-bottom: 2px solid #fff;
     }
 
     &:hover {

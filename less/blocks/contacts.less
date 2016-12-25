@@ -1,17 +1,30 @@
-.contacts {
+.contacts__wrapper {
   .container();
   text-align: center;
-}
-
-.contacts__wrapper {
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
-  padding: 25px 20px;
+  align-items: center;
+  padding: 22px 20px 30px 20px;
 
   @media @tablet-widths {
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: center;
+    padding-top: 47px;
+  }
+
+  @media @desktop-widths {
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-top: 68px;
+    padding-bottom: 10px;
+  }
+}
+
+.contacts__heading {
+
+  @media @desktop-widths {
+    order: 1;
   }
 }
 
@@ -19,32 +32,60 @@
   font-size: 24px;
   font-weight: @font-weight-light;
   color: @text-color;
+  margin-bottom: 22px;
 
   @media @tablet-widths {
     width: 70%;
     margin: 0 auto;
     font-size: 40px;
+
   }
 
   @media @desktop-widths {
     font-size: 50px;
+    margin-left: 140px;
   }
 }
 
 .contacts__data {
+  margin-bottom: 11px;
+
+  &--tel {
+
+    @media @tablet-widths {
+      margin-right: auto;
+    }
+
+    @media @desktop-widths {
+      margin-right: 0;
+      order: 2;
+    }
+  }
+
+  &--mail {
+
+    @media @desktop-widths {
+      order: 4;
+    }
+  }
+
+  &--address {
+    margin-bottom: 0;
+
+    @media @desktop-widths {
+      order: 3;
+    }
+  }
 
   @media @tablet-widths {
-    width: 50%;
-    margin-top: 40px;
+    width: 48%;
+    margin-top: 30px;
   }
 
   @media @desktop-widths {
-    width: 33%;
+    width: 298px;
     justify-content: space-between;
-
-    &:nth-child(2) {
-      order: 3;
-    }
+    margin-top: 46px;
   }
 }
 
@@ -54,8 +95,12 @@
   font-size: @font-size;
   font-weight: @font-weight-bold;
 
+  @media @tablet-widths {
+    margin-bottom: 7px;
+  }
+
   @media @desktop-widths {
-    margin-bottom: 20px;
+    margin-bottom: 25px;
   }
 }
 
@@ -65,4 +110,18 @@
   font-style: normal;
   font-weight: @font-weight-light;
   text-decoration: none;
+}
+
+.contacts__link[href^="mailto"] {
+
+  &:hover {
+    color: @text-color;
+    border-bottom: 1px solid @text-color;
+  }
+
+  &:active {
+    color: @text-color;
+    border-bottom: none;
+    opacity: 0.3;
+  }
 }
