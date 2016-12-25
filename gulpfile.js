@@ -21,14 +21,15 @@ gulp.task("style", function() {
     .pipe(less())
     .pipe(postcss([
       autoprefixer({browsers: [
-        "last 2 versions"
+        "last 2 versions", "IE 11"
       ]})
-      mqpacker ({ sort: true })
+      // mqpacker ({ sort: true })
     ]))
     .pipe(gulp.dest("build/css"))
     .pipe(minify())
     .pipe(rename("style-min.css"))
-    .pipe(gulp.dest("build/css"));
+    .pipe(gulp.dest("build/css"))
+    .pipe(server.stream());
 });
 
 gulp.task("images", function() {
