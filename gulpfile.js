@@ -23,28 +23,16 @@ gulp.task("style", function() {
       autoprefixer({browsers: [
         "last 2 versions"
       ]})
-    mqpacker({ sort: true })
-  ]))
-  .pipe(gulp.dest("build/css"))
-  .pipe(minify())
-  .pipe(rename("style.min.css"))
-  .pipe(gulp.dest("build/css"));
-});
-
-gulp.task("serve", function() {
-  server.init({
-    server: "build",
-    notify: false,
-    open: true,
-    cors: true,
-    ui: false
-  });
-  gulp.watch("less/**/*.less", ["style"]);
-  gulp.watch("*.html").on("change", server.reload);
+      mqpacker ({ sort: true })
+    ]))
+    .pipe(gulp.dest("build/css"))
+    .pipe(minify())
+    .pipe(rename("style-min.css"))
+    .pipe(gulp.dest("build/css"));
 });
 
 gulp.task("images", function() {
-  return gulp.src("build/img/**/*.{png,jpg,gif}")
+  return gulp.src("build/img/**/*.{png, jpg, gif}")
   .pipe(imagemin([
     imagemin.optipng({optimizationLevel: 3}),
     imagemin.jpegtran({progressive: true})
@@ -87,4 +75,17 @@ gulp.task("build", function(fn) {
     "symbols",
     fn
   );
+});
+
+gulp.task("serve", function() {
+  server.init({
+    server: "build",
+    notify: false,
+    open: true,
+    cors: true,
+    ui: false
+  });
+
+  gulp.watch("less/**/*.less", ["style"]);
+  gulp.watch("*.html").on("change", server.reload);
 });
