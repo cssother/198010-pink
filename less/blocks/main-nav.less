@@ -5,6 +5,14 @@
     display: none;
   }
 
+  &--no-js {
+    display: block;
+
+    @media @desktop-widths {
+      display: flex;
+    }
+  }
+
   @media @desktop-widths {
     display: flex;
     align-items: center;
@@ -84,6 +92,7 @@
 
   @media @desktop-widths {
     display: inline;
+    vertical-align: middle;
     padding: 0;
     text-transform: none;
     font-weight: @font-weight-normal;

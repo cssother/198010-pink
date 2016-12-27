@@ -4,6 +4,7 @@
   <meta charset="utf-8">
   <title>HTML Academy: Пинк</title>
   <link rel="stylesheet" href="css/style.css">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
 </head>
 <body class="body">
   <svg style="display: none" xmlns="http://www.w3.org/2000/svg">
@@ -52,12 +53,12 @@
     </symbol>
   </svg>
   <header class="header">
-    <div class="header-top">
+    <div class="header-top  header-top--no-js">
       <div class="header-top__common-wrap">
         <div class="header-top__wrapper">
           <div class="main-logo">
             <a href="index.html" class="main-logo__link">
-              <svg version="1.1" id="Layer_2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="146.3px" height="40.375px" viewBox="0 0 146.3 40.375" enable-background="new 0 0 146.3 40.375" xml:space="preserve">
+              <svg version="1.1" id="Layer_2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="146.3" height="40.375" viewBox="0 0 146.3 40.375" enable-background="new 0 0 146.3 40.375" xml:space="preserve">
                 <g>
                   <path class="logo__text" fill="#FFFFFF" d="M71.874,18.661c0-0.708,0.58-1.288,1.256-1.288h7.18c5.087,0,8.436,2.704,8.436,7.146v0.064 c0,4.861-4.057,7.373-8.854,7.373h-5.475v6.825c0,0.708-0.58,1.288-1.288,1.288c-0.676,0-1.256-0.58-1.256-1.288V18.661z M79.988,29.641c3.734,0,6.182-1.996,6.182-4.959v-0.063c0-3.22-2.414-4.894-6.053-4.894h-5.699v9.917H79.988L79.988,29.641z"/>
                   <path class="logo__text" fill="#FFFFFF" d="M93.603,18.5c0-0.708,0.579-1.288,1.255-1.288c0.709,0,1.288,0.58,1.288,1.288v20.283 c0,0.708-0.579,1.287-1.288,1.287c-0.676,0-1.255-0.579-1.255-1.287V18.5z"/>
@@ -90,7 +91,7 @@
           </div>
           <button type="button" class="header__button"></button>
         </div>
-        <nav class="main-nav main-nav--closed">
+        <nav class="main-nav main-nav--closed  main-nav--no-js">
           <div class="main-nav__wrapper">
             <ul class="main-nav__list">
               <li class="main-nav__item">
@@ -186,7 +187,7 @@
                   <span class="field-text__input-with-icon">
                     <input class="field-text__input" type="tel" name="tel" placeholder="Номер, пожалуйста">
                     <span class="field-text__input-icon">
-                      <svg class="field-text__icon" width="20px" height="19px">
+                      <svg class="field-text__icon" width="20" height="19">
                         <use xlink:href="#icon-phone"></use>
                       </svg>
                     </span>
@@ -197,7 +198,7 @@
                   <span class="field-text__input-with-icon">
                     <input class="field-text__input" type="email" name="email" placeholder="Введите почту*">
                     <span class="field-text__input-icon">
-                      <svg class="field-text__icon" width="18px" height="13px">
+                      <svg class="field-text__icon" width="18" height="13">
                         <use xlink:href="#icon-mail"></use>
                       </svg>
                     </span>
@@ -255,7 +256,7 @@
       <div class="footer__logo">
         <div class="main-logo">
           <a href="index.html" class="main-logo__link  main-logo__link--footer">
-            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="146.3px" height="40.375px" viewBox="0 0 146.3 40.375" enable-background="new 0 0 146.3 40.375" xml:space="preserve">
+            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="146.3" height="40.375" viewBox="0 0 146.3 40.375" enable-background="new 0 0 146.3 40.375" xml:space="preserve">
               <g>
                 <path class="logo__text  logo__text--footer" d="M71.874,18.661c0-0.708,0.58-1.288,1.256-1.288h7.18c5.087,0,8.436,2.704,8.436,7.146v0.064 c0,4.861-4.057,7.373-8.854,7.373h-5.475v6.825c0,0.708-0.58,1.288-1.288,1.288c-0.676,0-1.256-0.58-1.256-1.288V18.661z M79.988,29.641c3.734,0,6.182-1.996,6.182-4.959v-0.063c0-3.22-2.414-4.894-6.053-4.894h-5.699v9.917H79.988L79.988,29.641z"/>
                 <path class="logo__text  logo__text--footer" d="M93.603,18.5c0-0.708,0.579-1.288,1.255-1.288c0.709,0,1.288,0.58,1.288,1.288v20.283 c0,0.708-0.579,1.287-1.288,1.287c-0.676,0-1.255-0.579-1.255-1.287V18.5z"/>
@@ -291,17 +292,17 @@
         <ul class="social__list">
           <li class="social__item">
             <a class="social__link" href="#">twitter
-              <svg class="social__icon" width="18px" height="14px"><use xlink:href="#icon-twitter"></use></svg>
+              <svg class="social__icon" width="18" height="14"><use xlink:href="#icon-twitter"></use></svg>
             </a>
           </li>
           <li class="social__item">
             <a class="social__link" href="#">facebook
-              <svg class="social__icon" width="9px" height="18px"><use xlink:href="#icon-facebook"></use></svg>
+              <svg class="social__icon" width="9" height="18"><use xlink:href="#icon-facebook"></use></svg>
             </a>
           </li>
           <li class="social__item">
             <a class="social__link" href="#">youtube
-              <svg class="social__icon" width="15px" height="13px"><use xlink:href="#icon-youtube"></use></svg>
+              <svg class="social__icon" width="15" height="13"><use xlink:href="#icon-youtube"></use></svg>
             </a>
           </li>
         </ul>
@@ -309,7 +310,7 @@
       <div class="copyright">
         <a href="#" class="copyright__link">
           <span class="copyright__text">Разработано</span>
-          <svg class="copyright__icon" width="27px" height="34px"><use xlink:href="#icon-htmlacademy"></use></svg>
+          <svg class="copyright__icon" width="27" height="34"><use xlink:href="#icon-htmlacademy"></use></svg>
         </a>
       </div>
     </div>

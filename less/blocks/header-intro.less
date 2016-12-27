@@ -4,15 +4,15 @@
   justify-content: center;
   margin: 0;
 
-  background: url("../img/bg-back-mobile@1x.jpg") center center no-repeat;
+  background: @text-color url("../img/bg-back-mobile@1x.jpg") center center no-repeat;
   background-position: center top;
   background-size: auto 489px;
 
   @media @tablet-widths {
     background: url("../img/bg-back-tablet@1x.jpg") center top no-repeat;
 
-    @media (min-width: 700px) and (min-resolution: 144dpi),
-    (min-width: 700px) and (min-resolution: 1.5dppx) {
+    @media (min-width: 660px) and (min-resolution: 144dpi),
+    (min-width: 660px) and (min-resolution: 1.5dppx) {
       background: url("../img/bg-back-tablet@2x.jpg") center top no-repeat;
       background-size: 1200px 729px;
     }
@@ -21,8 +21,8 @@
   @media @desktop-widths {
     background: url("../img/bg-back-desktop@1x.jpg") center top no-repeat;
 
-    @media (min-width: 1200px) and (min-resolution: 144dpi),
-    (min-width: 1200px) and (min-resolution: 1.5dppx) {
+    @media (min-width: 960px) and (min-resolution: 144dpi),
+    (min-width: 960px) and (min-resolution: 1.5dppx) {
       background: url("../img/bg-back-desktop@2x.jpg") center top no-repeat;
       background-size: 2560px 853px;
     }
@@ -39,8 +39,8 @@
       background-size: auto auto, 1200px 729px;
       background-position: center bottom, center center;
 
-      @media (min-width: 700px) and (min-resolution: 144dpi),
-      (min-width: 700px) and (min-resolution: 1.5dppx) {
+      @media (min-width: 660px) and (min-resolution: 144dpi),
+      (min-width: 660px) and (min-resolution: 1.5dppx) {
         background: url("../img/iphone-hand-tablet@2x.png") center bottom no-repeat,
         url("../img/bg-back-tablet@2x.jpg") center center no-repeat;
         background-size: 700px 545px, 1200px 729px;
@@ -56,8 +56,8 @@
       background-size: auto auto, center center;
       background-position: center bottom, center center;
 
-      @media (min-width: 1200px) and (min-resolution: 144dpi),
-      (min-width: 1200px) and (min-resolution: 1.5dppx) {
+      @media (min-width: 960px) and (min-resolution: 144dpi),
+      (min-width: 960px) and (min-resolution: 1.5dppx) {
         background: url("../img/iphone-hand-desktop-work@2x.png") center bottom no-repeat,
         url("../img/bg-back-desktop@2x.jpg") center center no-repeat;
         background-size: 940px 645px, 2560px 853px;
@@ -109,8 +109,8 @@
       padding-top: 463px;
     }
 
-    @media (max-width: 699px) and (min-resolution: 144dpi),
-    (max-width: 699px) and (min-resolution: 1.5dppx) {
+    @media (max-width: 659px) and (min-resolution: 144dpi),
+    (max-width: 659px) and (min-resolution: 1.5dppx) {
       background: url("../img/iphone-hand-mobile@2x.png") left bottom no-repeat;
       background-size: 258px 286px;
     }
