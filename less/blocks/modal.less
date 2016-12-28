@@ -1,18 +1,27 @@
 .modal {
-  display: none;
+  position: fixed;
+  top: 20%;
+  left: 50%;
+  margin-left: -165px;
   background-color: #fff;
   box-shadow: 0 7px 20px rgba(0, 0, 0, 0.15);
+  display: none;
 
   @media @tablet-widths {
     width: 460px;
-    margin: 0 auto;
+    margin-left: -230px;
   }
 
   @media @desktop-widths {
 
     &--true {
+      margin-left: -390px;
       width: 780px;
     }
+  }
+
+  &--active {
+    display: block;
   }
 }
 
@@ -24,7 +33,7 @@
 
   @media @tablet-widths {
     width: 310px;
-    padding: 35px 0 10px 0;
+    padding: 35px 0 15px 0;
   }
 
   @media @desktop-widths {
@@ -111,4 +120,6 @@
   font-size: @font-size;
   font-weight: @font-weight-bold;
   border-radius: 5px;
+  outline: none;
+  cursor: pointer;
 }

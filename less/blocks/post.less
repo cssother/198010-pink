@@ -1,4 +1,5 @@
 .post {
+  min-height: 301px;
   margin-bottom: 20px;
 
   @media @only-tablet-widths {
@@ -45,13 +46,12 @@
     height: auto;
 
     @media @tablet-widths {
-      width: 100%;
-      max-width: 700px;
+      width: 700px;
     }
 
     @media @desktop-widths {
-      width: 100%;
       max-width: 1200px;
+      width: 100%;
     }
   }
 }
@@ -62,8 +62,8 @@
   &::before {
     content: "Панорама дня";
     position: absolute;
-    width: 101px;
-    padding: 10px 20px;
+    width: 110px;
+    padding: 12px 15px;
     top: 0;
     right: 20px;
     color: #fff;
@@ -73,7 +73,7 @@
     background-color: @accented-text-color;
 
     @media @tablet-widths {
-      top: 57px;
+      top: 58px;
       right: 40px;
     }
 
