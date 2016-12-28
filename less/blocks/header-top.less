@@ -28,9 +28,17 @@
 }
 
 .header-top__common-wrap {
+  width: 100%;
+  margin: 0 auto;
+
+  @media @tablet-widths {
+    width: 100%;
+    margin: 0 auto;
+  }
 
   @media @desktop-widths {
-    .container();
+    width: 940px;
+    padding: 0 10px;
     display: flex;
     justify-content: space-between;
   }
@@ -44,7 +52,7 @@
   padding: 20px;
 
   @media @tablet-widths {
-    min-height: 110px;
+    height: 110px;
     align-items: center;
   }
 

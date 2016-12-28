@@ -62,9 +62,19 @@
 }
 
 .map__triangle {
+  fill: #ffffff;
   position: absolute;
   width: 100%;
-  top: -1%;
+  height: 15%;
+
+  @media @tablet-widths {
+    height: 16%;
+  }
+
+  @media @desktop-widths {
+    height: 19%;
+    top: -1px;
+  }
 }
 
 .map__triangle svg {
