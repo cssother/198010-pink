@@ -63,23 +63,24 @@
   }
 }
 
-.main-logo__link:hover .logo__glasses-desktop-hover {
+.main-logo__link:hover .logo__glasses-desktop {
 
   @media @desktop-widths {
     fill: @accented-text-color;
   }
 }
 
-.main-logo__link:active .logo__glasses-desktop-hover {
+.main-logo__link:active .logo__glasses-desktop {
 
   @media @desktop-widths {
-    fill: #ffffff;
-    opacity: 0.3;
+    fill: fade(#ffffff, 30%);
   }
 
   &--footer {
-    fill: @accented-text-color;
-    opacity: 0.3;
+
+    @media @desktop-widths {
+    fill: fade(@accented-text-color, 30%);
+    }
   }
 }
 
