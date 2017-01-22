@@ -1,8 +1,17 @@
 .main-nav {
   margin-bottom: auto;
+  width: 100%;
 
   &--closed {
     display: none;
+  }
+
+  &--no-js {
+    display: block;
+
+    @media @desktop-widths {
+      display: flex;
+    }
   }
 
   @media @desktop-widths {
@@ -15,6 +24,7 @@
 }
 
 .main-nav__wrapper {
+  width: 100%;
 
   @media @desktop-widths {
     width: 700px;
@@ -84,6 +94,7 @@
 
   @media @desktop-widths {
     display: inline;
+    vertical-align: middle;
     padding: 0;
     text-transform: none;
     font-weight: @font-weight-normal;

@@ -4,6 +4,14 @@
   margin-top: -67px;
   background-color: rgba(0, 0, 0, 0.3);
 
+  &--no-js {
+    background-color: @text-color;
+
+    @media @desktop-widths {
+      background-color: rgba(0, 0, 0, 0.3);
+    }
+  }
+
   @media @tablet-widths {
     top: 110px;
     margin-top: -110px;
@@ -20,9 +28,17 @@
 }
 
 .header-top__common-wrap {
+  width: 100%;
+  margin: 0 auto;
+
+  @media @tablet-widths {
+    width: 100%;
+    margin: 0 auto;
+  }
 
   @media @desktop-widths {
-    .container();
+    width: 940px;
+    padding: 0 10px;
     display: flex;
     justify-content: space-between;
   }
@@ -37,6 +53,7 @@
 
   @media @tablet-widths {
     height: 110px;
+    align-items: center;
   }
 
   @media @desktop-widths {

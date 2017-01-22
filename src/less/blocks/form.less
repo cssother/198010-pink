@@ -11,12 +11,14 @@
 }
 
 .form__wrapper {
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
 
   @media @desktop-widths {
-    .container();
+    width: 940px;
+    padding: 0 10px;
     flex-direction: row;
     justify-content: space-between;
     align-items: top;
@@ -109,5 +111,6 @@
 
   @media @desktop-widths {
     display: inline;
+    vertical-align: middle;
   }
 }
