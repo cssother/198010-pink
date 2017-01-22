@@ -1,0 +1,277 @@
+.field-text {
+  margin-bottom: 22px;
+
+  @media @tablet-widths {
+    margin-bottom: 57px;
+
+    &--position-1 {
+      order: 1;
+    }
+
+    &--position-2 {
+      order: 3;
+    }
+
+    &--position-3 {
+      order: 5;
+      margin-bottom: 66px;
+    }
+  }
+
+  @media @desktop-widths {
+
+    &--position-1 {
+      width: 435px;
+      margin-top: 13px;
+    }
+
+    &--position-2 {
+      width: 100%;
+    }
+
+    &--position-3 {
+      width: 100%;
+    }
+  }
+}
+
+.field-text__wrapper {
+  .container();
+
+  @media @desktop-widths {
+    margin: 0;
+    padding: 0;
+    width: auto;
+  }
+}
+
+.field-text__fieldset {
+  padding: 0;
+  margin: 0;
+  border: 2px solid #e5e5e5;
+
+  @media @only-mobile-widths {
+    border: none;
+  }
+
+  @media @tablet-widths {
+    padding: 37px 60px 0 60px;
+  }
+
+  @media @desktop-widths {
+    padding: 35px 60px 0 56px;
+  }
+}
+
+.field-text__title {
+  margin-bottom: 15px;
+  color: @accented-text-color;
+  text-align: center;
+  line-height: @line-height;
+  text-transform: uppercase;
+
+  @media @tablet-widths {
+    padding: 0 20px;
+    margin: 0;
+  }
+}
+
+.field-text__title--visibility {
+  display: none;
+
+  @media @tablet-widths {
+    display: block;
+  }
+}
+
+.field-text__input-wrap {
+
+  @media @desktop-widths {
+
+    &--order {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+    }
+  }
+}
+
+.field-text__item {
+  display: flex;
+  flex-direction: column-reverse;
+  line-height: 30px;
+  color: @accented-text-color;
+  text-transform: uppercase;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  @media @tablet-widths {
+    flex-direction: row-reverse;
+    align-items: center;
+    margin-bottom: 50px;
+
+    &--order {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      margin-bottom: 28px;
+
+      &:last-child {
+        margin-bottom: 24px;
+      }
+    }
+  }
+
+  @media @desktop-widths {
+    width: 435px;
+
+    &--order {
+      width: 375px;
+      margin-bottom: 13px;
+
+      &:last-child {
+        margin-bottom: 13px;
+      }
+    }
+  }
+}
+
+.field-text__item--order .field-text__text {
+
+  @media @tablet-widths {
+    margin-top: 10px;
+    margin-left: 17px;
+  }
+
+  @media @desktop-widths {
+    margin-top: 8px;
+    margin-left: 20px;
+  }
+}
+
+.field-text__input-with-icon {
+  display: flex;
+  width: 100%;
+
+  @media @tablet-widths {
+    border: 2px solid #e5e5e5;
+
+    &:hover {
+      border-color: @text-color;
+    }
+
+    &:active {
+      border-color: @accented-text-color;
+    }
+  }
+
+  @media @desktop-widths {
+    border: 2px solid #e5e5e5;
+
+    &:hover {
+      border-color: @text-color;
+    }
+
+    &:active {
+      border-color: @accented-text-color;
+    }
+  }
+}
+
+.field-text__input-with-icon input {
+
+  @media @tablet-widths {
+    border: 0;
+  }
+
+  @media @desktop-widths {
+    border: 0;
+  }
+}
+
+.field-text__input {
+  min-width: 238px;
+  margin-bottom: 19px;
+  padding: 15px 20px;
+  line-height: 30px;
+  font-size: @font-size;
+  color: @text-color;
+  border: 0;
+  border: 2px solid #e5e5e5;
+  outline: none;
+
+  &:hover {
+    border-color: @text-color;
+  }
+
+  &:active {
+    border-color: @accented-text-color;
+  }
+
+  @media @tablet-widths {
+    flex-grow: 1;
+    align-self: stretch;
+    margin: 0;
+  }
+}
+
+.field-text__input-icon {
+  display: none;
+
+  @media @tablet-widths {
+    display: flex;
+    width: 60px;
+    height: 65px;
+    background-color: #e5e5e5;
+  }
+}
+
+.field-text__icon {
+  fill: @accented-text-color;
+  margin: auto;
+}
+
+.field-text__text {
+  margin-bottom: 3px;
+  margin-left: 23px;
+
+  @media @tablet-widths {
+    margin: 0;
+    margin-right: 20px;
+  }
+}
+
+.field-text__visible {
+
+  @media @tablet-widths {
+    display: none;
+  }
+}
+
+.field-text__textarea {
+  width: 100%;
+  height: 205px;
+  padding: 20px;
+  margin: 0;
+  margin-bottom: 25px;
+  box-sizing: border-box;
+  font-size: @font-size;
+  line-height: 30px;
+  border: 2px solid #e5e5e5;
+  outline: none;
+  resize: none;
+
+  @media @tablet-widths {
+    height: 193px;
+    width: 100%;
+    padding: 15px 17px;
+    margin-bottom: 50px;
+  }
+
+  @media @desktop-widths {
+    height: 125px;
+    margin-bottom: 42px;
+  }
+}
