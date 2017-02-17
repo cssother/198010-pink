@@ -2303,7 +2303,7 @@ img {
     flex-direction: column;
     -ms-flex-pack: justify;
     justify-content: space-between;
-    height: 110px;
+    min-height: 110px;
     padding: 24px 30px 22px 28px;
   }
   .post__description--best {
