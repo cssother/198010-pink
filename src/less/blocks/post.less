@@ -166,10 +166,6 @@
     top: 50%;
     margin-top: -8px;
     background: url("../img/icon-heart.svg") center center no-repeat;
-
-    @media @tablet-widths {
-      margin-top: -10px;
-    }
   }
 
   @media @tablet-widths {
@@ -178,6 +174,7 @@
 
     &::before {
       left: 227px;
+      margin-top: -10px;
     }
 
     &--best {
@@ -187,7 +184,7 @@
 
       &::before {
         left: 104px;
-        top: 50%;
+        top: 27%;
         margin-top: -8px;
       }
     }
@@ -197,6 +194,10 @@
 
     &--best {
     padding-right: 35px;
+
+    &::before {
+      top: 21%;
+      }
     }
   }
 }
